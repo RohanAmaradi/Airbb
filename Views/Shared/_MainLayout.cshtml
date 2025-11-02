@@ -1,4 +1,5 @@
-﻿@{
+﻿@using Airbb.Models
+@{
     Layout = "_Layout";
 
     string controller = ViewContext.RouteData.Values["controller"]?.ToString() ?? "";
@@ -33,6 +34,19 @@
                 </ul>
 
                 <ul class="navbar-nav ms-auto">
+                    @{
+                        var session = new AirbbSession(Context.Session);
+                        int? count = session.GetReservationCount();
+                    }
+                    <a asp-action="Reservations" asp-controller="Home" class="btn btn-secondary position-relative">
+                        Reservations
+                        @if (count.HasValue)
+                        {
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">
+                                @count
+                            </span>
+                        }
+                    </a>
                     <li class="nav-item">
                         <a class="nav-link @(controller == "Admin" ? "active" : "")"
                            asp-area="Admin" asp-controller="Home" asp-action="Index">Admin</a>

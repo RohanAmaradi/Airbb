@@ -1,0 +1,190 @@
+﻿@model Airbb.Models.ResidenceViewModel
+@{
+    ViewData["Title"] = "Reservations";
+}
+
+<div class="min-vh-100 bg-light py-5">
+    <div class="container">
+        <!-- Header -->
+        <div class="row mb-5">
+            <div class="col">
+                <div class="d-flex align-items-center mb-3">
+                    <div class="bg-danger rounded-circle p-3 me-3">
+                        <i class="fa-solid fa-suitcase-rolling text-white fa-xl"></i>
+                    </div>
+                    <div>
+                        <h1 class="h2 fw-bold text-dark mb-1">Reservations</h1>
+                        <p class="text-muted mb-0">Manage your upcoming stays and bookings</p>
+                    </div>
+                </div>
+
+                <!-- Summary Cards -->
+                <div class="row g-3">
+                    <div class="col-md-3">
+                        <div class="card border-0 bg-white shadow-sm h-100">
+                            <div class="card-body text-center py-4">
+                                <i class="fa-solid fa-calendar-check fa-2x text-primary mb-3"></i>
+                                <h3 class="h4 fw-bold text-dark">@Model.Reservation?.Count</h3>
+                                <p class="text-muted mb-0">Total Bookings</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card border-0 bg-white shadow-sm h-100">
+                            <div class="card-body text-center py-4">
+                                <i class="fa-solid fa-location-dot fa-2x text-success mb-3"></i>
+                                <h3 class="h4 fw-bold text-dark">@Model.Reservation?.Select(r => r.Residence?.Location?.Name).Distinct().Count()</h3>
+                                <p class="text-muted mb-0">Destinations</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card border-0 bg-white shadow-sm h-100">
+                            <div class="card-body text-center py-4">
+                                <i class="fa-solid fa-moon fa-2x text-warning mb-3"></i>
+                                <h3 class="h4 fw-bold text-dark">
+                                    @{
+                                        var totalNights = Model.Reservation?.Sum(r => (r.ReservationEndDate - r.ReservationStartDate).Days) ?? 0;
+                                    }
+                                    @totalNights
+                                </h3>
+                                <p class="text-muted mb-0">Total Nights</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card border-0 bg-white shadow-sm h-100">
+                            <div class="card-body text-center py-4">
+                                <i class="fa-solid fa-dollar-sign fa-2x text-info mb-3"></i>
+                                <h3 class="h4 fw-bold text-dark">
+                                    @{
+                                        var totalAmount = Model.Reservation?.Sum(r =>
+                                        {
+                                            var days = (r.ReservationEndDate - r.ReservationStartDate).Days;
+                                            var price = int.Parse(r.Residence?.PricePerNight ?? "0");
+                                            return days * price;
+                                        }) ?? 0;
+                                    }
+                                    $@totalAmount
+                                </h3>
+                                <p class="text-muted mb-0">Total Spent</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Reservations List -->
+        <div class="row">
+            <div class="col-12">
+                @if (Model.Reservation != null && Model.Reservation.Any())
+                {
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-header bg-white py-3 border-bottom">
+                            <h5 class="card-title mb-0 fw-semibold">
+                                <i class="fa-solid fa-list me-2 text-primary"></i>Upcoming Stays
+                            </h5>
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="table-responsive">
+                                <table class="table table-hover align-middle mb-0">
+                                    <thead class="table-light">
+                                        <tr>
+                                            <th class="border-0 ps-4">Residence</th>
+                                            <th class="border-0">Location</th>
+                                            <th class="border-0">Dates</th>
+                                            <th class="border-0">Guests</th>
+                                            <th class="border-0">Price</th>
+                                            <th class="border-0 text-end pe-4">Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (var reservation in Model.Reservation)
+                                        {
+                                            var days = (reservation.ReservationEndDate - reservation.ReservationStartDate).Days;
+                                            var price = int.Parse(reservation.Residence?.PricePerNight ?? "0");
+                                            var total = days * price;
+
+                                            <tr class="reservation-row">
+                                                <td class="ps-4">
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="~/images/@reservation.Residence?.ResidencePicture"
+                                                             class="rounded me-3"
+                                                             alt="@reservation.Residence?.Name"
+                                                             style="width: 60px; height: 60px; object-fit: cover;">
+                                                        <div>
+                                                            <h6 class="fw-semibold mb-1">@reservation.Residence?.Name</h6>
+                                                            <small class="text-muted">@reservation.Residence?.BedroomNumber beds • @reservation.Residence?.BathroomNumber baths</small>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <i class="fa-solid fa-location-dot text-muted me-2"></i>
+                                                        <span>@reservation.Residence?.Location?.Name</span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div>
+                                                        <div class="fw-semibold">@reservation.ReservationStartDate.ToString("MMM dd, yyyy")</div>
+                                                        <div class="text-muted small">to @reservation.ReservationEndDate.ToString("MMM dd, yyyy")</div>
+                                                        <div class="text-primary small fw-semibold">@days nights</div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <i class="fa-solid fa-users text-muted me-2"></i>
+                                                        <span>@reservation.Residence?.GuestNumber guests</span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div>
+                                                        <div class="fw-semibold">$@total</div>
+                                                        <div class="text-muted small">$@reservation.Residence?.PricePerNight/night</div>
+                                                    </div>
+                                                </td>
+                                                <td class="text-end pe-4">
+                                                    <form asp-action="RemoveReservation" method="post" class="d-inline">
+                                                        <input type="hidden" name="id" value="@reservation.ReservationId" />
+                                                        <button type="submit" class="btn btn-outline-danger btn-sm"
+                                                                onclick="return confirm('Are you sure you want to cancel this reservation?')">
+                                                            <i class="fa-solid fa-xmark me-1"></i> Cancel
+                                                        </button>
+                                                    </form>
+                                                </td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                }
+                else
+                {
+                    <!-- Empty State -->
+                    <div class="text-center py-5">
+                        <div class="mb-4">
+                            <i class="fa-solid fa-suitcase-rolling fa-4x text-muted opacity-25 mb-3"></i>
+                            <h3 class="h4 text-dark mb-2">No reservations yet</h3>
+                            <p class="text-muted mb-4">Start exploring and book your perfect stay!</p>
+                        </div>
+                    </div>
+                }
+
+                <!-- Back Button -->
+                <div class="text-center mt-5">
+                    <a asp-action="Index"
+                       class="btn btn-primary px-5 py-3 fw-semibold"
+                       asp-route-activeLocation="@Model.ActiveLocation"
+                       asp-route-activeCheckInDate="@Model.ActiveCheckInDate"
+                       asp-route-activeCheckOutDate="@Model.ActiveCheckOutDate"
+                       asp-route-activeNoOfGuests="@Model.ActiveNoOfGuests">
+                        <i class="fa-solid fa-arrow-left me-2"></i> Back to Search
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

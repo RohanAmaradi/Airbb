@@ -1,0 +1,196 @@
+﻿@model Airbb.Models.ResidenceViewModel
+@{
+    ViewData["Title"] = "Residence Details";
+}
+
+<div class="min-vh-100 bg-light py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <!-- Back Navigation -->
+                <div class="mb-4">
+                    <a asp-action="Index"
+                       asp-route-activeLocation="@Model.ActiveLocation"
+                       asp-route-activeCheckInDate="@Model.ActiveCheckInDate"
+                       asp-route-activeCheckOutDate="@Model.ActiveCheckOutDate"
+                       asp-route-activeNoOfGuests="@Model.ActiveNoOfGuests"
+                       class="btn btn-outline-secondary btn-sm mb-3">
+                        <i class="fa-solid fa-arrow-left me-2"></i>Back to Search
+                    </a>
+                </div>
+
+                <!-- Main Card -->
+                <div class="card border-0 shadow-lg overflow-hidden">
+                    <div class="row g-0">
+                        <!-- Image Section -->
+                        <div class="col-md-7">
+                            <div class="position-relative">
+                                <img src="~/images/@Model.Residences.ResidencePicture"
+                                     class="img-fluid h-100 w-100 property-image"
+                                     alt="@Model.Residences.Name"
+                                     style="height: 500px; object-fit: cover;">
+                                <div class="position-absolute top-0 end-0 m-3">
+                                    <button class="btn btn-light btn-sm rounded-circle shadow-sm">
+                                        <i class="far fa-heart"></i>
+                                    </button>
+                                </div>
+                                <div class="position-absolute bottom-0 start-0 m-3">
+                                    <span class="badge bg-primary bg-opacity-90 text-white fs-6 px-3 py-2">
+                                        <i class="fa-solid fa-star me-1"></i>Featured
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Details Section -->
+                        <div class="col-md-5">
+                            <div class="card-body h-100 d-flex flex-column p-4">
+                                <!-- Header -->
+                                <div class="mb-4">
+                                    <h1 class="h2 fw-bold text-dark mb-2">@Model.Residences.Name</h1>
+                                    <div class="d-flex align-items-center text-muted mb-3">
+                                        <i class="fa-solid fa-location-dot text-primary me-2"></i>
+                                        <span class="fs-6">@Model.Residences.Location?.Name</span>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <span class="h3 fw-bold text-primary mb-0">$@Model.Residences.PricePerNight</span>
+                                        <span class="text-muted ms-2">/ night</span>
+                                    </div>
+                                </div>
+
+                                <!-- Features Grid -->
+                                <div class="row g-3 mb-4">
+                                    <div class="col-6">
+                                        <div class="d-flex align-items-center p-3 bg-light rounded-3 h-100">
+                                            <div class="bg-primary bg-opacity-10 rounded-circle p-2 me-3">
+                                                <i class="fa-solid fa-users text-primary fa-lg"></i>
+                                            </div>
+                                            <div>
+                                                <div class="fw-semibold text-dark">@Model.Residences.GuestNumber</div>
+                                                <small class="text-muted">Guests</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="d-flex align-items-center p-3 bg-light rounded-3 h-100">
+                                            <div class="bg-success bg-opacity-10 rounded-circle p-2 me-3">
+                                                <i class="fa-solid fa-bed text-success fa-lg"></i>
+                                            </div>
+                                            <div>
+                                                <div class="fw-semibold text-dark">@Model.Residences.BedroomNumber</div>
+                                                <small class="text-muted">Bedrooms</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="d-flex align-items-center p-3 bg-light rounded-3 h-100">
+                                            <div class="bg-info bg-opacity-10 rounded-circle p-2 me-3">
+                                                <i class="fa-solid fa-bath text-info fa-lg"></i>
+                                            </div>
+                                            <div>
+                                                <div class="fw-semibold text-dark">@Model.Residences.BathroomNumber</div>
+                                                <small class="text-muted">Bathrooms</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="d-flex align-items-center p-3 bg-light rounded-3 h-100">
+                                            <div class="bg-warning bg-opacity-10 rounded-circle p-2 me-3">
+                                                <i class="fa-solid fa-ruler-combined text-warning fa-lg"></i>
+                                            </div>
+                                            <div>
+                                                <div class="fw-semibold text-dark">1,200</div>
+                                                <small class="text-muted">Sq Ft</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Description -->
+                                <div class="mb-4 flex-grow-1">
+                                    <h5 class="fw-semibold mb-3">About this property</h5>
+                                    <p class="text-muted mb-0">
+                                        Beautiful @Model.Residences.BedroomNumber-bedroom, @Model.Residences.BathroomNumber-bathroom residence
+                                        located in the heart of @Model.Residences.Location?.Name. Perfect for @Model.Residences.GuestNumber guests
+                                        looking for a comfortable and memorable stay.
+                                    </p>
+                                </div>
+
+                                <!-- Amenities -->
+                                <div class="mb-4">
+                                    <h5 class="fw-semibold mb-3">What this place offers</h5>
+                                    <div class="row g-2">
+                                        <div class="col-6">
+                                            <div class="d-flex align-items-center text-muted">
+                                                <i class="fa-solid fa-wifi text-success me-2"></i>
+                                                <small>WiFi</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="d-flex align-items-center text-muted">
+                                                <i class="fa-solid fa-kitchen-set text-success me-2"></i>
+                                                <small>Kitchen</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="d-flex align-items-center text-muted">
+                                                <i class="fa-solid fa-tv text-success me-2"></i>
+                                                <small>TV</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="d-flex align-items-center text-muted">
+                                                <i class="fa-solid fa-car text-success me-2"></i>
+                                                <small>Parking</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Action Buttons -->
+                                <div class="mt-auto pt-4 border-top">
+                                    <div class="d-grid gap-2">
+                                        <a asp-action="Reserve"
+                                           asp-route-id="@Model.Residences.ResidenceId"
+                                           class="btn btn-primary btn-lg py-3 fw-semibold">
+                                            <i class="fa-solid fa-calendar-check me-2"></i>Reserve Now
+                                        </a>
+                                        <button class="btn btn-outline-secondary">
+                                            <i class="fa-regular fa-message me-2"></i>Contact Host
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Info Section -->
+                <div class="row mt-4">
+                    <div class="col-md-8">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="fw-semibold mb-3">Location</h5>
+                                <div class="bg-light rounded-3 p-4 text-center">
+                                    <i class="fa-solid fa-map-location-dot fa-3x text-muted opacity-25 mb-3"></i>
+                                    <p class="text-muted mb-0">Map view of @Model.Residences.Location?.Name coming soon</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body">
+                                <h5 class="fw-semibold mb-3">Availability</h5>
+                                <div class="text-center py-4">
+                                    <i class="fa-solid fa-calendar-day fa-2x text-primary mb-3"></i>
+                                    <p class="text-muted small mb-0">Check availability for your selected dates</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
