@@ -60,7 +60,7 @@ namespace Airbb.Controllers
             {
                 if (int.TryParse(model.ActiveNoOfGuests, out int guests))
                 {
-                    query = query.Where(r => r.GuestNumber == guests);
+                    query = query.Where(r => r.GuestNumber >= guests);
                 }
             }
             model.Residence = query.ToList();

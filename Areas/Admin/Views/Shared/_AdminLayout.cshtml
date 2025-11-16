@@ -15,10 +15,28 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="Admin" asp-controller="Home" asp-action="Index">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="Admin" asp-controller="ManageLocation" asp-action="Index">ManageLocation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="Admin" asp-controller="ManageResidence" asp-action="Index">ManageResidence</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="Admin" asp-controller="ManageUser" asp-action="Index">ManageUser</a>
+                    </li>
+                </ul>
 
-            <div class="navbar-nav navbar-right">
-                <a class="nav-link"
-                   asp-area="" asp-controller="Home" asp-action="Index">Site</a>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link @(controller == "Home" ? "active" : "")"
+                           asp-area="" asp-controller="Home" asp-action="Index">Site</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>

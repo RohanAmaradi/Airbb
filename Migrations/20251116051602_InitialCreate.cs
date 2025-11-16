@@ -33,9 +33,11 @@ namespace Airbb.Migrations
                     UserId = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     Name = table.Column<string>(type: "TEXT", nullable: false),
-                    PhoneNo = table.Column<string>(type: "TEXT", nullable: false),
-                    EmailAddress = table.Column<string>(type: "TEXT", nullable: false),
-                    DOB = table.Column<string>(type: "TEXT", nullable: false)
+                    PhoneNo = table.Column<string>(type: "TEXT", nullable: true),
+                    EmailAddress = table.Column<string>(type: "TEXT", nullable: true),
+                    DOB = table.Column<DateTime>(type: "TEXT", nullable: false),
+                    SSN = table.Column<string>(type: "TEXT", nullable: false),
+                    UserType = table.Column<string>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -53,8 +55,10 @@ namespace Airbb.Migrations
                     GuestNumber = table.Column<int>(type: "INTEGER", nullable: false),
                     BedroomNumber = table.Column<int>(type: "INTEGER", nullable: false),
                     BathroomNumber = table.Column<int>(type: "INTEGER", nullable: false),
+                    BuiltYear = table.Column<DateTime>(type: "TEXT", nullable: false),
                     PricePerNight = table.Column<string>(type: "TEXT", nullable: false),
-                    LocationId = table.Column<int>(type: "INTEGER", nullable: false)
+                    LocationId = table.Column<int>(type: "INTEGER", nullable: false),
+                    UserId = table.Column<int>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -64,6 +68,12 @@ namespace Airbb.Migrations
                         column: x => x.LocationId,
                         principalTable: "Location",
                         principalColumn: "LocationId",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_Residence_User_UserId",
+                        column: x => x.UserId,
+                        principalTable: "User",
+                        principalColumn: "UserId",
                         onDelete: ReferentialAction.Cascade);
                 });
 
@@ -101,24 +111,24 @@ namespace Airbb.Migrations
 
             migrationBuilder.InsertData(
                 table: "User",
-                columns: new[] { "UserId", "DOB", "EmailAddress", "Name", "PhoneNo" },
+                columns: new[] { "UserId", "DOB", "EmailAddress", "Name", "PhoneNo", "SSN", "UserType" },
                 values: new object[,]
                 {
-                    { 1, "02/19/1997", "lucas.bennett@gmail.com", "Lucas Bennett", "955-707-8080" },
-                    { 2, "06/23/2000", "isabella.perez@gmail.com", "Isabella Perez", "201-909-1010" },
-                    { 3, "10/14/1999", "ethan.clark@gmail.com", "Ethan Clark", "614-111-2121" },
-                    { 4, "12/12/1999", "jim.greevy@gmail.com", "Jim Greevy", "216-090-6767" }
+                    { 1, new DateTime(1997, 2, 19, 0, 0, 0, 0, DateTimeKind.Unspecified), "lucas.bennett@gmail.com", "Lucas Bennett", "955-707-8080", "124-866-6878", "Owner" },
+                    { 2, new DateTime(2000, 6, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), "isabella.perez@gmail.com", "Isabella Perez", "201-909-1010", "421-897-4356", "Client" },
+                    { 3, new DateTime(1999, 10, 14, 0, 0, 0, 0, DateTimeKind.Unspecified), "ethan.clark@gmail.com", "Ethan Clark", "614-111-2121", "124-409-6780", "Admin" },
+                    { 4, new DateTime(1999, 12, 12, 0, 0, 0, 0, DateTimeKind.Unspecified), "jim.greevy@gmail.com", "Jim Greevy", "216-090-6767", "989-456-4567", "Owner" }
                 });
 
             migrationBuilder.InsertData(
                 table: "Residence",
-                columns: new[] { "ResidenceId", "BathroomNumber", "BedroomNumber", "GuestNumber", "LocationId", "Name", "PricePerNight", "ResidencePicture" },
+                columns: new[] { "ResidenceId", "BathroomNumber", "BedroomNumber", "BuiltYear", "GuestNumber", "LocationId", "Name", "PricePerNight", "ResidencePicture", "UserId" },
                 values: new object[,]
                 {
-                    { 1, 1, 1, 2, 1, "Seattle Skyline Silhouette", "130", "SeattleSkylineSilhouette.png" },
-                    { 2, 2, 3, 6, 2, "Denver Mountain Cabin", "150", "DenverMountainCabin.png" },
-                    { 3, 2, 2, 4, 3, "Houston Downtown Loft", "95", "HoustonDowntownLoft.png" },
-                    { 4, 3, 4, 8, 4, "Orlando Family Villa", "170", "OrlandoFamilyVilla.png" }
+                    { 1, 1, 1, new DateTime(1899, 5, 7, 0, 0, 0, 0, DateTimeKind.Unspecified), 2, 1, "Seattle Skyline Silhouette", "130", "SeattleSkylineSilhouette.png", 1 },
+                    { 2, 2, 3, new DateTime(1901, 5, 5, 0, 0, 0, 0, DateTimeKind.Unspecified), 6, 2, "Denver Mountain Cabin", "150", "DenverMountainCabin.png", 4 },
+                    { 3, 2, 2, new DateTime(2001, 9, 7, 0, 0, 0, 0, DateTimeKind.Unspecified), 4, 3, "Houston Downtown Loft", "95", "HoustonDowntownLoft.png", 3 },
+                    { 4, 3, 4, new DateTime(1989, 12, 5, 0, 0, 0, 0, DateTimeKind.Unspecified), 8, 4, "Orlando Family Villa", "170", "OrlandoFamilyVilla.png", 2 }
                 });
 
             migrationBuilder.InsertData(
@@ -140,6 +150,11 @@ namespace Airbb.Migrations
                 name: "IX_Residence_LocationId",
                 table: "Residence",
                 column: "LocationId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Residence_UserId",
+                table: "Residence",
+                column: "UserId");
         }
 
         /// <inheritdoc />
@@ -149,13 +164,13 @@ namespace Airbb.Migrations
                 name: "Reservation");
 
             migrationBuilder.DropTable(
-                name: "User");
-
-            migrationBuilder.DropTable(
                 name: "Residence");
 
             migrationBuilder.DropTable(
                 name: "Location");
+
+            migrationBuilder.DropTable(
+                name: "User");
         }
     }
 }

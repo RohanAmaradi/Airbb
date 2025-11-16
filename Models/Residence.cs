@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 
 namespace Airbb.Models
@@ -20,7 +21,12 @@ namespace Airbb.Models
         public int BedroomNumber { get; set; }
 
         [Required(ErrorMessage = "Please enter a BathroomNumber.")]
+        [RegularExpression(@"^\d+(\.5)?$", ErrorMessage = "Bathroom Number must end with .5 when fractional")]
         public int BathroomNumber { get; set; }
+        
+        [Required(ErrorMessage = "Please enter a BuiltYear.")]
+        [BuiltYear(150, ErrorMessage = "Built Year must be no more than 150 year old.")]
+        public DateTime? BuiltYear { get; set; }
 
         [Required(ErrorMessage = "Please enter a PricePerNight.")]
         public string PricePerNight { get; set; } = string.Empty;
@@ -29,5 +35,11 @@ namespace Airbb.Models
         public int LocationId { get; set; }
         [ValidateNever]
         public Location Location { get; set; } = null!;
+        
+        [Required(ErrorMessage = "Please enter a UserId.")]
+        [Remote("CheckOwnerId", "Validation", areaName: "")]
+        public int UserId { get; set; }
+        [ValidateNever]
+        public User User { get; set; } = null!;
     }
 }

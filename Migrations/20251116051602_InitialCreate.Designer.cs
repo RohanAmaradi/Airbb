@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Airbb.Migrations
 {
     [DbContext(typeof(AirbbContext))]
-    [Migration("20251101201854_InitialCreate")]
+    [Migration("20251116051602_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -114,6 +114,9 @@ namespace Airbb.Migrations
                     b.Property<int>("BedroomNumber")
                         .HasColumnType("INTEGER");
 
+                    b.Property<DateTime>("BuiltYear")
+                        .HasColumnType("TEXT");
+
                     b.Property<int>("GuestNumber")
                         .HasColumnType("INTEGER");
 
@@ -132,9 +135,14 @@ namespace Airbb.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
+                    b.Property<int>("UserId")
+                        .HasColumnType("INTEGER");
+
                     b.HasKey("ResidenceId");
 
                     b.HasIndex("LocationId");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Residence");
 
@@ -144,44 +152,52 @@ namespace Airbb.Migrations
                             ResidenceId = 1,
                             BathroomNumber = 1,
                             BedroomNumber = 1,
+                            BuiltYear = new DateTime(1899, 5, 7, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             GuestNumber = 2,
                             LocationId = 1,
                             Name = "Seattle Skyline Silhouette",
                             PricePerNight = "130",
-                            ResidencePicture = "SeattleSkylineSilhouette.png"
+                            ResidencePicture = "SeattleSkylineSilhouette.png",
+                            UserId = 1
                         },
                         new
                         {
                             ResidenceId = 2,
                             BathroomNumber = 2,
                             BedroomNumber = 3,
+                            BuiltYear = new DateTime(1901, 5, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             GuestNumber = 6,
                             LocationId = 2,
                             Name = "Denver Mountain Cabin",
                             PricePerNight = "150",
-                            ResidencePicture = "DenverMountainCabin.png"
+                            ResidencePicture = "DenverMountainCabin.png",
+                            UserId = 4
                         },
                         new
                         {
                             ResidenceId = 3,
                             BathroomNumber = 2,
                             BedroomNumber = 2,
+                            BuiltYear = new DateTime(2001, 9, 7, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             GuestNumber = 4,
                             LocationId = 3,
                             Name = "Houston Downtown Loft",
                             PricePerNight = "95",
-                            ResidencePicture = "HoustonDowntownLoft.png"
+                            ResidencePicture = "HoustonDowntownLoft.png",
+                            UserId = 3
                         },
                         new
                         {
                             ResidenceId = 4,
                             BathroomNumber = 3,
                             BedroomNumber = 4,
+                            BuiltYear = new DateTime(1989, 12, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             GuestNumber = 8,
                             LocationId = 4,
                             Name = "Orlando Family Villa",
                             PricePerNight = "170",
-                            ResidencePicture = "OrlandoFamilyVilla.png"
+                            ResidencePicture = "OrlandoFamilyVilla.png",
+                            UserId = 2
                         });
                 });
 
@@ -191,12 +207,10 @@ namespace Airbb.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("DOB")
-                        .IsRequired()
+                    b.Property<DateTime>("DOB")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("EmailAddress")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Name")
@@ -204,6 +218,13 @@ namespace Airbb.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<string>("PhoneNo")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("SSN")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("UserType")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
@@ -215,34 +236,42 @@ namespace Airbb.Migrations
                         new
                         {
                             UserId = 1,
-                            DOB = "02/19/1997",
+                            DOB = new DateTime(1997, 2, 19, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             EmailAddress = "lucas.bennett@gmail.com",
                             Name = "Lucas Bennett",
-                            PhoneNo = "955-707-8080"
+                            PhoneNo = "955-707-8080",
+                            SSN = "124-866-6878",
+                            UserType = "Owner"
                         },
                         new
                         {
                             UserId = 2,
-                            DOB = "06/23/2000",
+                            DOB = new DateTime(2000, 6, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             EmailAddress = "isabella.perez@gmail.com",
                             Name = "Isabella Perez",
-                            PhoneNo = "201-909-1010"
+                            PhoneNo = "201-909-1010",
+                            SSN = "421-897-4356",
+                            UserType = "Client"
                         },
                         new
                         {
                             UserId = 3,
-                            DOB = "10/14/1999",
+                            DOB = new DateTime(1999, 10, 14, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             EmailAddress = "ethan.clark@gmail.com",
                             Name = "Ethan Clark",
-                            PhoneNo = "614-111-2121"
+                            PhoneNo = "614-111-2121",
+                            SSN = "124-409-6780",
+                            UserType = "Admin"
                         },
                         new
                         {
                             UserId = 4,
-                            DOB = "12/12/1999",
+                            DOB = new DateTime(1999, 12, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             EmailAddress = "jim.greevy@gmail.com",
                             Name = "Jim Greevy",
-                            PhoneNo = "216-090-6767"
+                            PhoneNo = "216-090-6767",
+                            SSN = "989-456-4567",
+                            UserType = "Owner"
                         });
                 });
 
@@ -265,7 +294,15 @@ namespace Airbb.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("Airbb.Models.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("Location");
+
+                    b.Navigation("User");
                 });
 #pragma warning restore 612, 618
         }

@@ -1,0 +1,145 @@
+﻿@model Airbb.Models.Residence
+@{
+    ViewData["Title"] = "Edit Residence";
+}
+
+<div class="min-vh-100 bg-light py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+
+                <!-- Back Button -->
+                <div class="mb-4">
+                    <a asp-action="Index" asp-controller="ManageResidence" class="btn btn-outline-secondary btn-sm mb-3">
+                        <i class="fa-solid fa-arrow-left me-2"></i>Back to Residences
+                    </a>
+                </div>
+
+                <!-- Main Card -->
+                <div class="card border-0 shadow-lg overflow-hidden">
+                    <div class="row g-0">
+
+                        <!-- Image Section -->
+                        <div class="col-md-6">
+                            <div class="position-relative">
+                                <img src="~/images/@Model.ResidencePicture"
+                                     class="img-fluid h-100 w-100"
+                                     style="height: 500px; object-fit: cover;"
+                                     alt="@Model.Name">
+
+                                <span class="position-absolute bottom-0 start-0 m-3 badge bg-primary bg-opacity-75 text-white fs-6 px-3 py-2">
+                                    <i class="fa-solid fa-pen-to-square me-1"></i>Edit Residence
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Form Section -->
+                        <div class="col-md-6">
+                            <div class="card-body p-4">
+
+                                <h2 class="fw-bold mb-4">Edit Residence Details</h2>
+
+                                <form asp-action="Edit" method="post">
+
+                                    <div asp-validation-summary="All" class="text-danger mb-3"></div>
+
+                                    <!-- Name -->
+                                    <div class="mb-3">
+                                        <label asp-for="Name" class="form-label fw-semibold">Name</label>
+                                        <input asp-for="Name" class="form-control shadow-sm rounded-3" />
+                                        <span asp-validation-for="Name" class="text-danger"></span>
+                                    </div>
+
+                                    <!-- Residence Picture -->
+                                    <div class="mb-3">
+                                        <label asp-for="ResidencePicture" class="form-label fw-semibold">Picture File Name</label>
+                                        <input asp-for="ResidencePicture" class="form-control shadow-sm rounded-3" />
+                                        <span asp-validation-for="ResidencePicture" class="text-danger"></span>
+                                    </div>
+
+                                    <!-- Guest Number -->
+                                    <div class="mb-3">
+                                        <label asp-for="GuestNumber" class="form-label fw-semibold">Guest Number</label>
+                                        <input asp-for="GuestNumber" class="form-control shadow-sm rounded-3" />
+                                        <span asp-validation-for="GuestNumber" class="text-danger"></span>
+                                    </div>
+
+                                    <!-- Bedroom Number -->
+                                    <div class="mb-3">
+                                        <label asp-for="BedroomNumber" class="form-label fw-semibold">Bedroom Number</label>
+                                        <input asp-for="BedroomNumber" class="form-control shadow-sm rounded-3" />
+                                        <span asp-validation-for="BedroomNumber" class="text-danger"></span>
+                                    </div>
+
+                                    <!-- Bathroom Number -->
+                                    <div class="mb-3">
+                                        <label asp-for="BathroomNumber" class="form-label fw-semibold">Bathroom Number</label>
+                                        <input asp-for="BathroomNumber" class="form-control shadow-sm rounded-3" />
+                                        <span asp-validation-for="BathroomNumber" class="text-danger"></span>
+                                    </div>
+
+                                    <!-- Built Year -->
+                                    <div class="mb-3">
+                                        <label asp-for="BuiltYear" class="form-label fw-semibold">Built Year</label>
+                                        <input asp-for="BuiltYear" type="date" class="form-control shadow-sm rounded-3" />
+                                        <span asp-validation-for="BuiltYear" class="text-danger"></span>
+                                    </div>
+
+                                    <!-- Price Per Night -->
+                                    <div class="mb-3">
+                                        <label asp-for="PricePerNight" class="form-label fw-semibold">Price Per Night</label>
+                                        <input asp-for="PricePerNight" class="form-control shadow-sm rounded-3" />
+                                        <span asp-validation-for="PricePerNight" class="text-danger"></span>
+                                    </div>
+
+                                    <!-- Location Dropdown -->
+                                    <div class="mb-3">
+                                        <label asp-for="LocationId" class="form-label fw-semibold">Location</label>
+                                        <select asp-for="LocationId" class="form-select shadow-sm rounded-3">
+                                            <option value="">Select Location</option>
+                                            @foreach (var loc in ViewBag.Locations)
+                                            {
+                                                <option value="@loc.LocationId">@loc.Name</option>
+                                            }
+                                        </select>
+                                        <span asp-validation-for="LocationId" class="text-danger"></span>
+                                    </div>
+
+                                    <!-- Owner Dropdown -->
+                                    <div class="mb-3">
+                                        <label asp-for="UserId" class="form-label fw-semibold">Owner</label>
+                                        <select asp-for="UserId" class="form-select shadow-sm rounded-3">
+                                            <option value="">Select Owner</option>
+                                            @foreach (var user in ViewBag.Users)
+                                            {
+                                                <option value="@user.UserId">@user.Name</option>
+                                            }
+                                        </select>
+                                        <span asp-validation-for="UserId" class="text-danger"></span>
+                                    </div>
+
+                                    <!-- Hidden ID -->
+                                    <input type="hidden" asp-for="ResidenceId" />
+
+                                    <!-- Buttons -->
+                                    <div class="d-flex gap-3 mt-4">
+                                        <button type="submit" class="btn btn-primary px-4 py-2 fw-semibold shadow-sm">
+                                            <i class="fa-solid fa-floppy-disk me-2"></i>Save
+                                        </button>
+                                        <a asp-action="Index" asp-controller="ManageResidence" class="btn btn-outline-secondary px-4 py-2 fw-semibold shadow-sm">
+                                            Cancel
+                                        </a>
+                                    </div>
+
+                                </form>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div> <!-- Card End -->
+
+            </div>
+        </div>
+    </div>
+</div>

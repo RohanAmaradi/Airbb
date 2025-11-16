@@ -1,0 +1,104 @@
+﻿@model List<Airbb.Models.Residence>
+
+@{
+    ViewData["Title"] = "My Residences";
+}
+
+<div class="min-vh-100 bg-light py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-11">
+
+                <!-- Header / Add Button -->
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h2 class="fw-bold text-dark">My Residences</h2>
+
+                    <a asp-controller="ManageResidence" asp-action="Add"
+                       class="btn btn-primary shadow-sm rounded-3 px-4 py-2">
+                        <i class="fa-solid fa-plus me-2"></i>Add Residence
+                    </a>
+                </div>
+
+                <!-- CARD WRAPPER -->
+                <div class="card border-0 shadow-lg rounded-4 overflow-hidden">
+                    <div class="card-body p-4">
+
+                        <!-- TABLE -->
+                        <table class="table table-hover align-middle">
+                            <thead class="table-light">
+                                <tr>
+                                    <th class="fw-semibold">Image</th>
+                                    <th class="fw-semibold">Name</th>
+                                    <th class="fw-semibold">Guests</th>
+                                    <th class="fw-semibold">Bedrooms</th>
+                                    <th class="fw-semibold">Bathrooms</th>
+                                    <th class="fw-semibold">Built Year</th>
+                                    <th class="fw-semibold">Price / Night</th>
+                                    <th class="fw-semibold">Location</th>
+                                    <th class="fw-semibold">Owner</th>
+                                    <th class="text-end fw-semibold">Actions</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                @foreach (var residence in Model)
+                                {
+                                    <tr>
+
+                                        <!-- Image -->
+                                        <td style="width: 120px;">
+                                            <img src="~/images/@residence.ResidencePicture"
+                                                 class="img-thumbnail rounded-3 shadow-sm"
+                                                 style="height: 70px; width: 120px; object-fit: cover;" />
+                                        </td>
+
+                                        <td>@residence.Name</td>
+                                        <td>@residence.GuestNumber</td>
+                                        <td>@residence.BedroomNumber</td>
+                                        <td>@residence.BathroomNumber</td>
+
+                                        <td>
+                                            @residence.BuiltYear?.ToString("yyyy")
+                                        </td>
+
+                                        <td>
+                                            <span class="fw-semibold text-primary">
+                                                $@residence.PricePerNight
+                                            </span>
+                                        </td>
+
+                                        <td>@residence.Location?.Name</td>
+
+                                        <td>@residence.User?.Name</td>
+
+                                        <td class="text-end">
+
+                                            <a asp-controller="ManageResidence"
+                                               asp-action="Edit"
+                                               asp-route-id="@residence.ResidenceId"
+                                               class="btn btn-sm btn-outline-primary me-2">
+                                                Edit
+                                            </a>
+
+                                            <a asp-controller="ManageResidence"
+                                               asp-action="Delete"
+                                               asp-route-id="@residence.ResidenceId"
+                                               class="btn btn-sm btn-outline-danger">
+                                                Delete
+                                            </a>
+
+                                        </td>
+
+                                    </tr>
+                                }
+                            </tbody>
+
+                        </table>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

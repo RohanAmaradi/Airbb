@@ -1,0 +1,78 @@
+﻿@model List<Airbb.Models.User>
+
+@{
+    ViewData["Title"] = "Users";
+}
+
+<div class="min-vh-100 bg-light py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-11">
+
+                <!-- Header / Add Button -->
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h2 class="fw-bold text-dark">Users</h2>
+
+                    <a asp-controller="ManageUser" asp-action="Add"
+                       class="btn btn-primary shadow-sm rounded-3 px-4 py-2">
+                        <i class="fa-solid fa-plus me-2"></i>Add User
+                    </a>
+                </div>
+
+                <!-- CARD WRAPPER -->
+                <div class="card border-0 shadow-lg rounded-4 overflow-hidden">
+                    <div class="card-body p-4">
+
+                        <!-- TABLE -->
+                        <table class="table table-hover align-middle">
+                            <thead class="table-light">
+                                <tr>
+                                    <th class="fw-semibold">Name</th>
+                                    <th class="fw-semibold">Phone</th>
+                                    <th class="fw-semibold">Email</th>
+                                    <th class="fw-semibold">DOB</th>
+                                    <th class="fw-semibold">SSN</th>
+                                    <th class="fw-semibold">User Type</th>
+                                    <th class="text-end fw-semibold">Actions</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                @foreach (var user in Model)
+                                {
+                                    <tr>
+                                        <td>@user.Name</td>
+                                        <td>@user.PhoneNo</td>
+                                        <td>@user.EmailAddress</td>
+                                        <td>@user.DOB?.ToString("MM/dd/yyyy")</td>
+                                        <td>@user.SSN</td>
+                                        <td>@user.UserType</td>
+
+                                        <td class="text-end">
+                                            <a asp-controller="ManageUser"
+                                               asp-action="Edit"
+                                               asp-route-id="@user.UserId"
+                                               class="btn btn-sm btn-outline-primary me-2">
+                                                Edit
+                                            </a>
+
+                                            <a asp-controller="ManageUser"
+                                               asp-action="Delete"
+                                               asp-route-id="@user.UserId"
+                                               class="btn btn-sm btn-outline-danger">
+                                                Delete
+                                            </a>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+
+                        </table>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

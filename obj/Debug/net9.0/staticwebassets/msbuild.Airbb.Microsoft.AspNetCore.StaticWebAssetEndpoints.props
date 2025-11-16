@@ -120,6 +120,18 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"sinbyijomw"},{"Name":"integrity","Value":"sha256-1GX5QjBKDtR1Xd95BllegnEHvE8XtmOub2FhHVhyePI="},{"Name":"label","Value":"_content/Airbb/images/SeattleSkylineSilhouette.png"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"398887"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00221GX5QjBKDtR1Xd95BllegnEHvE8XtmOub2FhHVhyePI=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Nov 2025 20:51:10 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Airbb/js/maximum-built-year.ex594lfe3f.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\maximum-built-year.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ex594lfe3f"},{"Name":"integrity","Value":"sha256-vhF76IhDPy2wqfcyK9X0xVQ6Oo7lEiPlM0EkPAyETRM="},{"Name":"label","Value":"_content/Airbb/js/maximum-built-year.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"659"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022vhF76IhDPy2wqfcyK9X0xVQ6Oo7lEiPlM0EkPAyETRM=\u0022"},{"Name":"Last-Modified","Value":"Sun, 16 Nov 2025 04:19:13 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Airbb/js/maximum-built-year.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\maximum-built-year.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-vhF76IhDPy2wqfcyK9X0xVQ6Oo7lEiPlM0EkPAyETRM="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"659"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022vhF76IhDPy2wqfcyK9X0xVQ6Oo7lEiPlM0EkPAyETRM=\u0022"},{"Name":"Last-Modified","Value":"Sun, 16 Nov 2025 04:19:13 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Airbb/js/site.fp1mmz8qlx.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>

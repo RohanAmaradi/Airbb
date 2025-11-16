@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "C3HU+xsImMZbR/4fj78kkHucHj/pYiObev8r2G9b+wo=",
+  "Hash": "pL5lU0RVuUdNj7pEk7QBvwmNKknDoTeEzquhRJ0iTJg=",
   "Source": "Airbb",
   "BasePath": "_content/Airbb",
   "Mode": "Default",
@@ -687,6 +687,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Identity": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\obj\\Release\\net9.0\\compressed\\feo3pl5u03-ex594lfe3f.gz",
+      "SourceId": "Airbb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\obj\\Release\\net9.0\\compressed\\",
+      "BasePath": "_content/Airbb",
+      "RelativePath": "js/maximum-built-year#[.{fingerprint=ex594lfe3f}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\wwwroot\\js\\maximum-built-year.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "wi5hmyp8d1",
+      "Integrity": "yJv61CG/CDenJokO6ecKMQDY0jbfQd1bdkhOw2I+i8Y=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\wwwroot\\js\\maximum-built-year.js"
     },
     {
       "Identity": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\obj\\Release\\net9.0\\compressed\\hntg7aavlc-mrlpezrjn3.gz",
@@ -1695,6 +1716,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Identity": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\obj\\Release\\net9.0\\compressed\\publish\\feo3pl5u03-ex594lfe3f.br",
+      "SourceId": "Airbb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\obj\\Release\\net9.0\\compressed\\publish\\",
+      "BasePath": "_content/Airbb",
+      "RelativePath": "js/maximum-built-year#[.{fingerprint=ex594lfe3f}]?.js.br",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\wwwroot\\js\\maximum-built-year.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "br",
+      "Fingerprint": "9vm1ed6ywl",
+      "Integrity": "BSzVayoCEaoPt8PpUH/3uT9li9FpTmBJUIZmPRVCKes=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\wwwroot\\js\\maximum-built-year.js"
     },
     {
       "Identity": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\obj\\Release\\net9.0\\compressed\\publish\\hntg7aavlc-mrlpezrjn3.br",
@@ -2934,6 +2976,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\SeattleSkylineSilhouette.png"
+    },
+    {
+      "Identity": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\wwwroot\\js\\maximum-built-year.js",
+      "SourceId": "Airbb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\wwwroot\\",
+      "BasePath": "_content/Airbb",
+      "RelativePath": "js/maximum-built-year#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ex594lfe3f",
+      "Integrity": "vhF76IhDPy2wqfcyK9X0xVQ6Oo7lEiPlM0EkPAyETRM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\maximum-built-year.js"
     },
     {
       "Identity": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\wwwroot\\js\\site.js",
@@ -6845,6 +6908,520 @@
         {
           "Name": "integrity",
           "Value": "sha256-1GX5QjBKDtR1Xd95BllegnEHvE8XtmOub2FhHVhyePI="
+        }
+      ]
+    },
+    {
+      "Route": "js/maximum-built-year.ex594lfe3f.js",
+      "AssetFile": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\obj\\Release\\net9.0\\compressed\\feo3pl5u03-ex594lfe3f.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.003021148036"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "330"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yJv61CG/CDenJokO6ecKMQDY0jbfQd1bdkhOw2I+i8Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Nov 2025 04:19:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"vhF76IhDPy2wqfcyK9X0xVQ6Oo7lEiPlM0EkPAyETRM=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ex594lfe3f"
+        },
+        {
+          "Name": "label",
+          "Value": "js/maximum-built-year.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vhF76IhDPy2wqfcyK9X0xVQ6Oo7lEiPlM0EkPAyETRM="
+        }
+      ]
+    },
+    {
+      "Route": "js/maximum-built-year.ex594lfe3f.js",
+      "AssetFile": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\obj\\Release\\net9.0\\compressed\\publish\\feo3pl5u03-ex594lfe3f.br",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "br",
+          "Quality": "0.003649635036"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "273"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BSzVayoCEaoPt8PpUH/3uT9li9FpTmBJUIZmPRVCKes=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Nov 2025 04:19:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"vhF76IhDPy2wqfcyK9X0xVQ6Oo7lEiPlM0EkPAyETRM=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ex594lfe3f"
+        },
+        {
+          "Name": "label",
+          "Value": "js/maximum-built-year.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vhF76IhDPy2wqfcyK9X0xVQ6Oo7lEiPlM0EkPAyETRM="
+        }
+      ]
+    },
+    {
+      "Route": "js/maximum-built-year.ex594lfe3f.js",
+      "AssetFile": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\wwwroot\\js\\maximum-built-year.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "659"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vhF76IhDPy2wqfcyK9X0xVQ6Oo7lEiPlM0EkPAyETRM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Nov 2025 04:19:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ex594lfe3f"
+        },
+        {
+          "Name": "label",
+          "Value": "js/maximum-built-year.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vhF76IhDPy2wqfcyK9X0xVQ6Oo7lEiPlM0EkPAyETRM="
+        }
+      ]
+    },
+    {
+      "Route": "js/maximum-built-year.ex594lfe3f.js.br",
+      "AssetFile": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\obj\\Release\\net9.0\\compressed\\publish\\feo3pl5u03-ex594lfe3f.br",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "273"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BSzVayoCEaoPt8PpUH/3uT9li9FpTmBJUIZmPRVCKes=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Nov 2025 04:19:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ex594lfe3f"
+        },
+        {
+          "Name": "label",
+          "Value": "js/maximum-built-year.js.br"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-BSzVayoCEaoPt8PpUH/3uT9li9FpTmBJUIZmPRVCKes="
+        }
+      ]
+    },
+    {
+      "Route": "js/maximum-built-year.ex594lfe3f.js.gz",
+      "AssetFile": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\obj\\Release\\net9.0\\compressed\\feo3pl5u03-ex594lfe3f.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "330"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yJv61CG/CDenJokO6ecKMQDY0jbfQd1bdkhOw2I+i8Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Nov 2025 04:19:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ex594lfe3f"
+        },
+        {
+          "Name": "label",
+          "Value": "js/maximum-built-year.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yJv61CG/CDenJokO6ecKMQDY0jbfQd1bdkhOw2I+i8Y="
+        }
+      ]
+    },
+    {
+      "Route": "js/maximum-built-year.js",
+      "AssetFile": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\obj\\Release\\net9.0\\compressed\\feo3pl5u03-ex594lfe3f.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.003021148036"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "330"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yJv61CG/CDenJokO6ecKMQDY0jbfQd1bdkhOw2I+i8Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Nov 2025 04:19:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"vhF76IhDPy2wqfcyK9X0xVQ6Oo7lEiPlM0EkPAyETRM=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vhF76IhDPy2wqfcyK9X0xVQ6Oo7lEiPlM0EkPAyETRM="
+        }
+      ]
+    },
+    {
+      "Route": "js/maximum-built-year.js",
+      "AssetFile": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\obj\\Release\\net9.0\\compressed\\publish\\feo3pl5u03-ex594lfe3f.br",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "br",
+          "Quality": "0.003649635036"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "273"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BSzVayoCEaoPt8PpUH/3uT9li9FpTmBJUIZmPRVCKes=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Nov 2025 04:19:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"vhF76IhDPy2wqfcyK9X0xVQ6Oo7lEiPlM0EkPAyETRM=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vhF76IhDPy2wqfcyK9X0xVQ6Oo7lEiPlM0EkPAyETRM="
+        }
+      ]
+    },
+    {
+      "Route": "js/maximum-built-year.js",
+      "AssetFile": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\wwwroot\\js\\maximum-built-year.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "659"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vhF76IhDPy2wqfcyK9X0xVQ6Oo7lEiPlM0EkPAyETRM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Nov 2025 04:19:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vhF76IhDPy2wqfcyK9X0xVQ6Oo7lEiPlM0EkPAyETRM="
+        }
+      ]
+    },
+    {
+      "Route": "js/maximum-built-year.js.br",
+      "AssetFile": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\obj\\Release\\net9.0\\compressed\\publish\\feo3pl5u03-ex594lfe3f.br",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "273"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BSzVayoCEaoPt8PpUH/3uT9li9FpTmBJUIZmPRVCKes=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Nov 2025 04:19:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BSzVayoCEaoPt8PpUH/3uT9li9FpTmBJUIZmPRVCKes="
+        }
+      ]
+    },
+    {
+      "Route": "js/maximum-built-year.js.gz",
+      "AssetFile": "C:\\Users\\yache\\OneDrive\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\obj\\Release\\net9.0\\compressed\\feo3pl5u03-ex594lfe3f.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "330"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yJv61CG/CDenJokO6ecKMQDY0jbfQd1bdkhOw2I+i8Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Nov 2025 04:19:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yJv61CG/CDenJokO6ecKMQDY0jbfQd1bdkhOw2I+i8Y="
         }
       ]
     },

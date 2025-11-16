@@ -343,3 +343,4 @@ C:\Users\yache\OneDrive\Desktop\Juo_J\FALL_2025\Rohan\Airbb\Airbb\obj\Debug\net9
 C:\Users\yache\OneDrive\Desktop\Juo_J\FALL_2025\Rohan\Airbb\Airbb\obj\Debug\net9.0\Airbb.pdb
 C:\Users\yache\OneDrive\Desktop\Juo_J\FALL_2025\Rohan\Airbb\Airbb\obj\Debug\net9.0\Airbb.genruntimeconfig.cache
 C:\Users\yache\OneDrive\Desktop\Juo_J\FALL_2025\Rohan\Airbb\Airbb\obj\Debug\net9.0\ref\Airbb.dll
+C:\Users\yache\OneDrive\Desktop\Juo_J\FALL_2025\Rohan\Airbb\Airbb\obj\Debug\net9.0\compressed\feo3pl5u03-ex594lfe3f.gz

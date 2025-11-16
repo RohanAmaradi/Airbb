@@ -31,7 +31,9 @@ namespace Airbb.Models
                     GuestNumber = 2,
                     BedroomNumber = 1,
                     BathroomNumber = 1,
-                    PricePerNight = "130"
+                    PricePerNight = "130",
+                    BuiltYear = new DateTime(1899, 05, 07),
+                    UserId = 1,
                 },
                 new Residence
                 {
@@ -42,7 +44,9 @@ namespace Airbb.Models
                     GuestNumber = 6,
                     BedroomNumber = 3,
                     BathroomNumber = 2,
-                    PricePerNight = "150"
+                    PricePerNight = "150",
+                    BuiltYear = new DateTime(1901, 05, 05),
+                    UserId = 4,
                 },
                 new Residence
                 {
@@ -53,7 +57,9 @@ namespace Airbb.Models
                     GuestNumber = 4,
                     BedroomNumber = 2,
                     BathroomNumber = 2,
-                    PricePerNight = "95"
+                    PricePerNight = "95",
+                    BuiltYear = new DateTime(2001, 09, 07),
+                    UserId = 3,
                 },
                 new Residence
                 {
@@ -64,7 +70,9 @@ namespace Airbb.Models
                     GuestNumber = 8,
                     BedroomNumber = 4,
                     BathroomNumber = 3,
-                    PricePerNight = "170"
+                    PricePerNight = "170",
+                    BuiltYear = new DateTime(1989, 12, 05),
+                    UserId = 2,
                 }
             );
 
@@ -99,7 +107,9 @@ namespace Airbb.Models
                     Name = "Lucas Bennett",
                     PhoneNo = "955-707-8080",
                     EmailAddress = "lucas.bennett@gmail.com",
-                    DOB = "02/19/1997"
+                    DOB = new DateTime(1997, 02, 19),
+                    SSN = "124-866-6878",
+                    UserType = "Owner"
                 },
                 new User
                 {
@@ -107,7 +117,9 @@ namespace Airbb.Models
                     Name = "Isabella Perez",
                     PhoneNo = "201-909-1010",
                     EmailAddress = "isabella.perez@gmail.com",
-                    DOB = "06/23/2000"
+                    DOB = new DateTime(2000, 06, 23),
+                    SSN = "421-897-4356",
+                    UserType = "Client"
                 },
                 new User
                 {
@@ -115,7 +127,9 @@ namespace Airbb.Models
                     Name = "Ethan Clark",
                     PhoneNo = "614-111-2121",
                     EmailAddress = "ethan.clark@gmail.com",
-                    DOB = "10/14/1999"
+                    DOB = new DateTime(1999, 10, 14),
+                    SSN = "124-409-6780",
+                    UserType = "Admin"
                 },
                 new User
                 {
@@ -123,7 +137,9 @@ namespace Airbb.Models
                     Name = "Jim Greevy",
                     PhoneNo = "216-090-6767",
                     EmailAddress = "jim.greevy@gmail.com",
-                    DOB = "12/12/1999"
+                    DOB = new DateTime(1999, 12, 12),
+                    SSN = "989-456-4567",
+                    UserType = "Owner"
                 }
             );
         }

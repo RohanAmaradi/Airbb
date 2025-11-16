@@ -1,0 +1,114 @@
+﻿@model Airbb.Models.User
+@{
+    ViewData["Title"] = "Edit User";
+}
+
+<div class="min-vh-100 bg-light py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+
+                <!-- Back Button -->
+                <div class="mb-4">
+                    <a asp-action="Index" asp-controller="ManageUser" class="btn btn-outline-secondary btn-sm mb-3">
+                        <i class="fa-solid fa-arrow-left me-2"></i>Back to Users
+                    </a>
+                </div>
+
+                <!-- Main Card -->
+                <div class="card border-0 shadow-lg overflow-hidden">
+                    <div class="row g-0">
+
+                        <!-- Left Section (Profile Placeholder) -->
+                        <div class="col-md-6 bg-light d-flex align-items-center justify-content-center" style="height: 500px;">
+                            <div class="text-center">
+                                <i class="fa-solid fa-user-circle text-secondary" style="font-size: 120px;"></i>
+                                <h4 class="mt-3 fw-bold">@Model.Name</h4>
+                                <span class="badge bg-primary bg-opacity-75 text-white fs-6 px-3 py-2">
+                                    <i class="fa-solid fa-pen-to-square me-1"></i>Edit User
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Form Section -->
+                        <div class="col-md-6">
+                            <div class="card-body p-4">
+
+                                <h2 class="fw-bold mb-4">Edit User Details</h2>
+
+                                <form asp-action="Edit" method="post">
+
+                                    <div asp-validation-summary="All" class="text-danger mb-3"></div>
+
+                                    <!-- Name -->
+                                    <div class="mb-3">
+                                        <label asp-for="Name" class="form-label fw-semibold">Name</label>
+                                        <input asp-for="Name" class="form-control shadow-sm rounded-3" />
+                                        <span asp-validation-for="Name" class="text-danger"></span>
+                                    </div>
+
+                                    <!-- Phone Number -->
+                                    <div class="mb-3">
+                                        <label asp-for="PhoneNo" class="form-label fw-semibold">Phone Number</label>
+                                        <input asp-for="PhoneNo" class="form-control shadow-sm rounded-3" />
+                                        <span asp-validation-for="PhoneNo" class="text-danger"></span>
+                                    </div>
+
+                                    <!-- Email Address -->
+                                    <div class="mb-3">
+                                        <label asp-for="EmailAddress" class="form-label fw-semibold">Email Address</label>
+                                        <input asp-for="EmailAddress" type="email" class="form-control shadow-sm rounded-3" />
+                                        <span asp-validation-for="EmailAddress" class="text-danger"></span>
+                                    </div>
+
+                                    <!-- DOB -->
+                                    <div class="mb-3">
+                                        <label asp-for="DOB" class="form-label fw-semibold">Date of Birth</label>
+                                        <input asp-for="DOB" type="date" class="form-control shadow-sm rounded-3" />
+                                        <span asp-validation-for="DOB" class="text-danger"></span>
+                                    </div>
+
+                                    <!-- SSN -->
+                                    <div class="mb-3">
+                                        <label asp-for="SSN" class="form-label fw-semibold">SSN</label>
+                                        <input asp-for="SSN" class="form-control shadow-sm rounded-3" />
+                                        <span asp-validation-for="SSN" class="text-danger"></span>
+                                    </div>
+
+                                    <!-- User Type -->
+                                    <div class="mb-3">
+                                        <label asp-for="UserType" class="form-label fw-semibold">User Type</label>
+                                        <select asp-for="UserType" class="form-select shadow-sm rounded-3">
+                                            <option value="">Select User Type</option>
+                                            <option value="Admin">Admin</option>
+                                            <option value="Owner">Owner</option>
+                                            <option value="Client">Client</option>
+                                        </select>
+                                        <span asp-validation-for="UserType" class="text-danger"></span>
+                                    </div>
+
+                                    <!-- Hidden ID -->
+                                    <input type="hidden" asp-for="UserId" />
+
+                                    <!-- Buttons -->
+                                    <div class="d-flex gap-3 mt-4">
+                                        <button type="submit" class="btn btn-primary px-4 py-2 fw-semibold shadow-sm">
+                                            <i class="fa-solid fa-floppy-disk me-2"></i>Save
+                                        </button>
+                                        <a asp-action="Index" asp-controller="ManageUser" class="btn btn-outline-secondary px-4 py-2 fw-semibold shadow-sm">
+                                            Cancel
+                                        </a>
+                                    </div>
+
+                                </form>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div> <!-- Card End -->
+
+            </div>
+        </div>
+    </div>
+</div>

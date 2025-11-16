@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Areas\Admin\Views\ManageLocation\" />
     <Folder Include="wwwroot\images\" />
   </ItemGroup>
 

@@ -1,0 +1,65 @@
+﻿@model Airbb.Models.Location
+@{
+    ViewData["Title"] = "Edit Location";
+}
+
+<div class="min-vh-100 bg-light py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+
+                <!-- Back Button -->
+                <div class="mb-4">
+                    <a asp-action="Index" asp-controller="ManageLocation" class="btn btn-outline-secondary btn-sm mb-3">
+                        <i class="fa-solid fa-arrow-left me-2"></i>Back to Locations
+                    </a>
+                </div>
+
+                <!-- Main Card -->
+                <div class="card border-0 shadow-lg overflow-hidden">
+
+                    <div class="position-relative bg-primary bg-opacity-25 p-4">
+                        <h3 class="fw-bold text-primary mb-0">
+                            <i class="fa-solid fa-location-dot me-2"></i>Edit Location
+                        </h3>
+                    </div>
+
+                    <div class="card-body p-4">
+
+                        <h4 class="fw-bold mb-4">Location Details</h4>
+
+                        <form asp-action="Edit" method="post">
+
+                            <div asp-validation-summary="All" class="text-danger mb-3"></div>
+
+                            <!-- Location Name -->
+                            <div class="mb-3">
+                                <label asp-for="Name" class="form-label fw-semibold">Location Name</label>
+                                <input asp-for="Name" class="form-control shadow-sm rounded-3" />
+                                <span asp-validation-for="Name" class="text-danger"></span>
+                            </div>
+
+                            <!-- Hidden ID -->
+                            <input type="hidden" asp-for="LocationId" />
+
+                            <!-- Buttons -->
+                            <div class="d-flex gap-3 mt-4">
+                                <button type="submit" class="btn btn-primary px-4 py-2 fw-semibold shadow-sm">
+                                    <i class="fa-solid fa-floppy-disk me-2"></i>Save
+                                </button>
+
+                                <a asp-action="Index" asp-controller="ManageLocation" class="btn btn-outline-secondary px-4 py-2 fw-semibold shadow-sm">
+                                    Cancel
+                                </a>
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div> <!-- Card End -->
+
+            </div>
+        </div>
+    </div>
+</div>

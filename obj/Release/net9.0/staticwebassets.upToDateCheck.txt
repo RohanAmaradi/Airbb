@@ -28,6 +28,7 @@ C:\Users\yache\OneDrive\Desktop\Juo_J\FALL_2025\Rohan\Airbb\Airbb\wwwroot\lib\jq
 C:\Users\yache\OneDrive\Desktop\Juo_J\FALL_2025\Rohan\Airbb\Airbb\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
 C:\Users\yache\OneDrive\Desktop\Juo_J\FALL_2025\Rohan\Airbb\Airbb\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
 C:\Users\yache\OneDrive\Desktop\Juo_J\FALL_2025\Rohan\Airbb\Airbb\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+C:\Users\yache\OneDrive\Desktop\Juo_J\FALL_2025\Rohan\Airbb\Airbb\wwwroot\js\maximum-built-year.js
 C:\Users\yache\OneDrive\Desktop\Juo_J\FALL_2025\Rohan\Airbb\Airbb\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
 C:\Users\yache\OneDrive\Desktop\Juo_J\FALL_2025\Rohan\Airbb\Airbb\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
 C:\Users\yache\OneDrive\Desktop\Juo_J\FALL_2025\Rohan\Airbb\Airbb\wwwroot\lib\jquery\dist\jquery.js
@@ -69,6 +70,7 @@ wwwroot\images\HoustonDowntownLoft.png
 wwwroot\images\logo2.png
 wwwroot\images\OrlandoFamilyVilla.png
 wwwroot\images\SeattleSkylineSilhouette.png
+wwwroot\js\maximum-built-year.js
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
