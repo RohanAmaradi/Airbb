@@ -1,4 +1,4 @@
-﻿namespace Airbb.Models
+﻿namespace Airbb.Models.ExtensionMethods
 {
     public class AirbbSession
     {

@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using Airbb.Models.Validations;
 
 namespace Airbb.Models
 {

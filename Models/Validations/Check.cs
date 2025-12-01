@@ -1,4 +1,6 @@
-﻿namespace Airbb.Models
+﻿using Airbb.Models.DataLayer;
+
+namespace Airbb.Models.Validations
 {
     public static class Check
     {

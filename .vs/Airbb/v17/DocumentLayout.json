@@ -1,0 +1,533 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ACA1A875-F19D-B094-5C31-3DCCDE1106D2}|Airbb.csproj|c:\\users\\yache\\onedrive\\attachments\\desktop\\juo_j\\fall_2025\\rohan\\airbb\\airbb\\areas\\admin\\views\\managelocation\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ACA1A875-F19D-B094-5C31-3DCCDE1106D2}|Airbb.csproj|solutionrelative:areas\\admin\\views\\managelocation\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACA1A875-F19D-B094-5C31-3DCCDE1106D2}|Airbb.csproj|c:\\users\\yache\\onedrive\\attachments\\desktop\\juo_j\\fall_2025\\rohan\\airbb\\airbb\\areas\\admin\\views\\manageuser\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ACA1A875-F19D-B094-5C31-3DCCDE1106D2}|Airbb.csproj|solutionrelative:areas\\admin\\views\\manageuser\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACA1A875-F19D-B094-5C31-3DCCDE1106D2}|Airbb.csproj|c:\\users\\yache\\onedrive\\attachments\\desktop\\juo_j\\fall_2025\\rohan\\airbb\\airbb\\areas\\admin\\views\\manageresidence\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ACA1A875-F19D-B094-5C31-3DCCDE1106D2}|Airbb.csproj|solutionrelative:areas\\admin\\views\\manageresidence\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACA1A875-F19D-B094-5C31-3DCCDE1106D2}|Airbb.csproj|c:\\users\\yache\\onedrive\\attachments\\desktop\\juo_j\\fall_2025\\rohan\\airbb\\airbb\\areas\\admin\\controllers\\manageresidencecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACA1A875-F19D-B094-5C31-3DCCDE1106D2}|Airbb.csproj|solutionrelative:areas\\admin\\controllers\\manageresidencecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACA1A875-F19D-B094-5C31-3DCCDE1106D2}|Airbb.csproj|c:\\users\\yache\\onedrive\\attachments\\desktop\\juo_j\\fall_2025\\rohan\\airbb\\airbb\\areas\\admin\\views\\manageresidence\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ACA1A875-F19D-B094-5C31-3DCCDE1106D2}|Airbb.csproj|solutionrelative:areas\\admin\\views\\manageresidence\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACA1A875-F19D-B094-5C31-3DCCDE1106D2}|Airbb.csproj|c:\\users\\yache\\onedrive\\attachments\\desktop\\juo_j\\fall_2025\\rohan\\airbb\\airbb\\areas\\admin\\controllers\\managelocationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACA1A875-F19D-B094-5C31-3DCCDE1106D2}|Airbb.csproj|solutionrelative:areas\\admin\\controllers\\managelocationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACA1A875-F19D-B094-5C31-3DCCDE1106D2}|Airbb.csproj|c:\\users\\yache\\onedrive\\attachments\\desktop\\juo_j\\fall_2025\\rohan\\airbb\\airbb\\areas\\admin\\controllers\\manageusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACA1A875-F19D-B094-5C31-3DCCDE1106D2}|Airbb.csproj|solutionrelative:areas\\admin\\controllers\\manageusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACA1A875-F19D-B094-5C31-3DCCDE1106D2}|Airbb.csproj|c:\\users\\yache\\onedrive\\attachments\\desktop\\juo_j\\fall_2025\\rohan\\airbb\\airbb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACA1A875-F19D-B094-5C31-3DCCDE1106D2}|Airbb.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACA1A875-F19D-B094-5C31-3DCCDE1106D2}|Airbb.csproj|c:\\users\\yache\\onedrive\\attachments\\desktop\\juo_j\\fall_2025\\rohan\\airbb\\airbb\\models\\datalayer\\queryextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACA1A875-F19D-B094-5C31-3DCCDE1106D2}|Airbb.csproj|solutionrelative:models\\datalayer\\queryextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACA1A875-F19D-B094-5C31-3DCCDE1106D2}|Airbb.csproj|c:\\users\\yache\\onedrive\\attachments\\desktop\\juo_j\\fall_2025\\rohan\\airbb\\airbb\\models\\datalayer\\queryoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACA1A875-F19D-B094-5C31-3DCCDE1106D2}|Airbb.csproj|solutionrelative:models\\datalayer\\queryoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACA1A875-F19D-B094-5C31-3DCCDE1106D2}|Airbb.csproj|c:\\users\\yache\\onedrive\\attachments\\desktop\\juo_j\\fall_2025\\rohan\\airbb\\airbb\\models\\datalayer\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACA1A875-F19D-B094-5C31-3DCCDE1106D2}|Airbb.csproj|solutionrelative:models\\datalayer\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACA1A875-F19D-B094-5C31-3DCCDE1106D2}|Airbb.csproj|c:\\users\\yache\\onedrive\\attachments\\desktop\\juo_j\\fall_2025\\rohan\\airbb\\airbb\\models\\datalayer\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACA1A875-F19D-B094-5C31-3DCCDE1106D2}|Airbb.csproj|solutionrelative:models\\datalayer\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACA1A875-F19D-B094-5C31-3DCCDE1106D2}|Airbb.csproj|c:\\users\\yache\\onedrive\\attachments\\desktop\\juo_j\\fall_2025\\rohan\\airbb\\airbb\\controllers\\residencecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACA1A875-F19D-B094-5C31-3DCCDE1106D2}|Airbb.csproj|solutionrelative:controllers\\residencecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACA1A875-F19D-B094-5C31-3DCCDE1106D2}|Airbb.csproj|c:\\users\\yache\\onedrive\\attachments\\desktop\\juo_j\\fall_2025\\rohan\\airbb\\airbb\\models\\datalayer\\configuration\\configureusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACA1A875-F19D-B094-5C31-3DCCDE1106D2}|Airbb.csproj|solutionrelative:models\\datalayer\\configuration\\configureusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACA1A875-F19D-B094-5C31-3DCCDE1106D2}|Airbb.csproj|c:\\users\\yache\\onedrive\\attachments\\desktop\\juo_j\\fall_2025\\rohan\\airbb\\airbb\\models\\domainmodels\\location.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACA1A875-F19D-B094-5C31-3DCCDE1106D2}|Airbb.csproj|solutionrelative:models\\domainmodels\\location.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACA1A875-F19D-B094-5C31-3DCCDE1106D2}|Airbb.csproj|c:\\users\\yache\\onedrive\\attachments\\desktop\\juo_j\\fall_2025\\rohan\\airbb\\airbb\\views\\shared\\_mainlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ACA1A875-F19D-B094-5C31-3DCCDE1106D2}|Airbb.csproj|solutionrelative:views\\shared\\_mainlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACA1A875-F19D-B094-5C31-3DCCDE1106D2}|Airbb.csproj|c:\\users\\yache\\onedrive\\attachments\\desktop\\juo_j\\fall_2025\\rohan\\airbb\\airbb\\views\\home\\reservations.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ACA1A875-F19D-B094-5C31-3DCCDE1106D2}|Airbb.csproj|solutionrelative:views\\home\\reservations.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACA1A875-F19D-B094-5C31-3DCCDE1106D2}|Airbb.csproj|c:\\users\\yache\\onedrive\\attachments\\desktop\\juo_j\\fall_2025\\rohan\\airbb\\airbb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ACA1A875-F19D-B094-5C31-3DCCDE1106D2}|Airbb.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACA1A875-F19D-B094-5C31-3DCCDE1106D2}|Airbb.csproj|c:\\users\\yache\\onedrive\\attachments\\desktop\\juo_j\\fall_2025\\rohan\\airbb\\airbb\\views\\home\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ACA1A875-F19D-B094-5C31-3DCCDE1106D2}|Airbb.csproj|solutionrelative:views\\home\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACA1A875-F19D-B094-5C31-3DCCDE1106D2}|Airbb.csproj|c:\\users\\yache\\onedrive\\attachments\\desktop\\juo_j\\fall_2025\\rohan\\airbb\\airbb\\models\\domainmodels\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACA1A875-F19D-B094-5C31-3DCCDE1106D2}|Airbb.csproj|solutionrelative:models\\domainmodels\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACA1A875-F19D-B094-5C31-3DCCDE1106D2}|Airbb.csproj|c:\\users\\yache\\onedrive\\attachments\\desktop\\juo_j\\fall_2025\\rohan\\airbb\\airbb\\models\\cookieextensions\\airbbcookies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACA1A875-F19D-B094-5C31-3DCCDE1106D2}|Airbb.csproj|solutionrelative:models\\cookieextensions\\airbbcookies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACA1A875-F19D-B094-5C31-3DCCDE1106D2}|Airbb.csproj|c:\\users\\yache\\onedrive\\attachments\\desktop\\juo_j\\fall_2025\\rohan\\airbb\\airbb\\models\\datalayer\\airbbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACA1A875-F19D-B094-5C31-3DCCDE1106D2}|Airbb.csproj|solutionrelative:models\\datalayer\\airbbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACA1A875-F19D-B094-5C31-3DCCDE1106D2}|Airbb.csproj|c:\\users\\yache\\onedrive\\attachments\\desktop\\juo_j\\fall_2025\\rohan\\airbb\\airbb\\models\\datalayer\\configuration\\configureresidences.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACA1A875-F19D-B094-5C31-3DCCDE1106D2}|Airbb.csproj|solutionrelative:models\\datalayer\\configuration\\configureresidences.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACA1A875-F19D-B094-5C31-3DCCDE1106D2}|Airbb.csproj|c:\\users\\yache\\onedrive\\attachments\\desktop\\juo_j\\fall_2025\\rohan\\airbb\\airbb\\models\\datalayer\\configuration\\configurelocations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACA1A875-F19D-B094-5C31-3DCCDE1106D2}|Airbb.csproj|solutionrelative:models\\datalayer\\configuration\\configurelocations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACA1A875-F19D-B094-5C31-3DCCDE1106D2}|Airbb.csproj|c:\\users\\yache\\onedrive\\attachments\\desktop\\juo_j\\fall_2025\\rohan\\airbb\\airbb\\models\\datalayer\\configuration\\configurereservations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACA1A875-F19D-B094-5C31-3DCCDE1106D2}|Airbb.csproj|solutionrelative:models\\datalayer\\configuration\\configurereservations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACA1A875-F19D-B094-5C31-3DCCDE1106D2}|Airbb.csproj|c:\\users\\yache\\onedrive\\attachments\\desktop\\juo_j\\fall_2025\\rohan\\airbb\\airbb\\models\\viewmodels\\residenceviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACA1A875-F19D-B094-5C31-3DCCDE1106D2}|Airbb.csproj|solutionrelative:models\\viewmodels\\residenceviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACA1A875-F19D-B094-5C31-3DCCDE1106D2}|Airbb.csproj|c:\\users\\yache\\onedrive\\attachments\\desktop\\juo_j\\fall_2025\\rohan\\airbb\\airbb\\models\\validations\\check.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACA1A875-F19D-B094-5C31-3DCCDE1106D2}|Airbb.csproj|solutionrelative:models\\validations\\check.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACA1A875-F19D-B094-5C31-3DCCDE1106D2}|Airbb.csproj|c:\\users\\yache\\onedrive\\attachments\\desktop\\juo_j\\fall_2025\\rohan\\airbb\\airbb\\models\\utilities\\filters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACA1A875-F19D-B094-5C31-3DCCDE1106D2}|Airbb.csproj|solutionrelative:models\\utilities\\filters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACA1A875-F19D-B094-5C31-3DCCDE1106D2}|Airbb.csproj|c:\\users\\yache\\onedrive\\attachments\\desktop\\juo_j\\fall_2025\\rohan\\airbb\\airbb\\models\\extensionmethods\\sessionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACA1A875-F19D-B094-5C31-3DCCDE1106D2}|Airbb.csproj|solutionrelative:models\\extensionmethods\\sessionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACA1A875-F19D-B094-5C31-3DCCDE1106D2}|Airbb.csproj|c:\\users\\yache\\onedrive\\attachments\\desktop\\juo_j\\fall_2025\\rohan\\airbb\\airbb\\models\\extensionmethods\\airbbsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACA1A875-F19D-B094-5C31-3DCCDE1106D2}|Airbb.csproj|solutionrelative:models\\extensionmethods\\airbbsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACA1A875-F19D-B094-5C31-3DCCDE1106D2}|Airbb.csproj|c:\\users\\yache\\onedrive\\attachments\\desktop\\juo_j\\fall_2025\\rohan\\airbb\\airbb\\models\\domainmodels\\reservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACA1A875-F19D-B094-5C31-3DCCDE1106D2}|Airbb.csproj|solutionrelative:models\\domainmodels\\reservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACA1A875-F19D-B094-5C31-3DCCDE1106D2}|Airbb.csproj|c:\\users\\yache\\onedrive\\attachments\\desktop\\juo_j\\fall_2025\\rohan\\airbb\\airbb\\controllers\\experiencecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACA1A875-F19D-B094-5C31-3DCCDE1106D2}|Airbb.csproj|solutionrelative:controllers\\experiencecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\Areas\\Admin\\Views\\ManageUser\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\ManageUser\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\Areas\\Admin\\Views\\ManageUser\\Edit.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\ManageUser\\Edit.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACQAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-30T17:15:40.258Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\Areas\\Admin\\Views\\ManageLocation\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\ManageLocation\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\Areas\\Admin\\Views\\ManageLocation\\Edit.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\ManageLocation\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-30T17:15:10.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\Areas\\Admin\\Views\\ManageResidence\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\ManageResidence\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\Areas\\Admin\\Views\\ManageResidence\\Edit.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\ManageResidence\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-30T17:10:37.596Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ManageUserController.cs",
+              "DocumentMoniker": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\Areas\\Admin\\Controllers\\ManageUserController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\ManageUserController.cs",
+              "ToolTip": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\Areas\\Admin\\Controllers\\ManageUserController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\ManageUserController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T16:33:09.358Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ManageResidenceController.cs",
+              "DocumentMoniker": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\Areas\\Admin\\Controllers\\ManageResidenceController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\ManageResidenceController.cs",
+              "ToolTip": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\Areas\\Admin\\Controllers\\ManageResidenceController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\ManageResidenceController.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAADwv1UAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T16:26:43.385Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ManageLocationController.cs",
+              "DocumentMoniker": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\Areas\\Admin\\Controllers\\ManageLocationController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\ManageLocationController.cs",
+              "ToolTip": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\Areas\\Admin\\Controllers\\ManageLocationController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\ManageLocationController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T16:21:54.467Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ResidenceController.cs",
+              "DocumentMoniker": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\Controllers\\ResidenceController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ResidenceController.cs",
+              "ToolTip": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\Controllers\\ResidenceController.cs",
+              "RelativeToolTip": "Controllers\\ResidenceController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T15:53:17.825Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ConfigureUsers.cs",
+              "DocumentMoniker": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\Models\\DataLayer\\Configuration\\ConfigureUsers.cs",
+              "RelativeDocumentMoniker": "Models\\DataLayer\\Configuration\\ConfigureUsers.cs",
+              "ToolTip": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\Models\\DataLayer\\Configuration\\ConfigureUsers.cs",
+              "RelativeToolTip": "Models\\DataLayer\\Configuration\\ConfigureUsers.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAwBcAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T03:01:30.739Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\Areas\\Admin\\Views\\ManageResidence\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\ManageResidence\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\Areas\\Admin\\Views\\ManageResidence\\Delete.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\ManageResidence\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-30T17:10:36.415Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Location.cs",
+              "DocumentMoniker": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\Models\\DomainModels\\Location.cs",
+              "RelativeDocumentMoniker": "Models\\DomainModels\\Location.cs",
+              "ToolTip": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\Models\\DomainModels\\Location.cs",
+              "RelativeToolTip": "Models\\DomainModels\\Location.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T13:04:05.917Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T13:05:14.084Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\Models\\DataLayer\\Repositories\\Repository.cs",
+              "RelativeDocumentMoniker": "Models\\DataLayer\\Repositories\\Repository.cs",
+              "ToolTip": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\Models\\DataLayer\\Repositories\\Repository.cs",
+              "RelativeToolTip": "Models\\DataLayer\\Repositories\\Repository.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAcwC8AAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T02:54:48.412Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\Models\\DataLayer\\Repositories\\IRepository.cs",
+              "RelativeDocumentMoniker": "Models\\DataLayer\\Repositories\\IRepository.cs",
+              "ToolTip": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\Models\\DataLayer\\Repositories\\IRepository.cs",
+              "RelativeToolTip": "Models\\DataLayer\\Repositories\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T02:54:40.196Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "QueryExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\Models\\DataLayer\\QueryExtensions.cs",
+              "RelativeDocumentMoniker": "Models\\DataLayer\\QueryExtensions.cs",
+              "ToolTip": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\Models\\DataLayer\\QueryExtensions.cs",
+              "RelativeToolTip": "Models\\DataLayer\\QueryExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T02:55:13.064Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "QueryOptions.cs",
+              "DocumentMoniker": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\Models\\DataLayer\\QueryOptions.cs",
+              "RelativeDocumentMoniker": "Models\\DataLayer\\QueryOptions.cs",
+              "ToolTip": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\Models\\DataLayer\\QueryOptions.cs",
+              "RelativeToolTip": "Models\\DataLayer\\QueryOptions.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAwwBwAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T02:55:19.639Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "_MainLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\Views\\Shared\\_MainLayout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_MainLayout.cshtml",
+              "ToolTip": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\Views\\Shared\\_MainLayout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_MainLayout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-30T04:25:59.459Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AirbbContext.cs",
+              "DocumentMoniker": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\Models\\DataLayer\\AirbbContext.cs",
+              "RelativeDocumentMoniker": "Models\\DataLayer\\AirbbContext.cs",
+              "ToolTip": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\Models\\DataLayer\\AirbbContext.cs",
+              "RelativeToolTip": "Models\\DataLayer\\AirbbContext.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T13:03:52.932Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ConfigureLocations.cs",
+              "DocumentMoniker": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\Models\\DataLayer\\Configuration\\ConfigureLocations.cs",
+              "RelativeDocumentMoniker": "Models\\DataLayer\\Configuration\\ConfigureLocations.cs",
+              "ToolTip": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\Models\\DataLayer\\Configuration\\ConfigureLocations.cs",
+              "RelativeToolTip": "Models\\DataLayer\\Configuration\\ConfigureLocations.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T02:56:01.699Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ConfigureResidences.cs",
+              "DocumentMoniker": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\Models\\DataLayer\\Configuration\\ConfigureResidences.cs",
+              "RelativeDocumentMoniker": "Models\\DataLayer\\Configuration\\ConfigureResidences.cs",
+              "ToolTip": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\Models\\DataLayer\\Configuration\\ConfigureResidences.cs",
+              "RelativeToolTip": "Models\\DataLayer\\Configuration\\ConfigureResidences.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBQAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T02:59:06.28Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\Views\\Home\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Details.cshtml",
+              "ToolTip": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\Views\\Home\\Details.cshtml",
+              "RelativeToolTip": "Views\\Home\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-30T03:05:40.83Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-30T04:25:21.576Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Reservations.cshtml",
+              "DocumentMoniker": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\Views\\Home\\Reservations.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Reservations.cshtml",
+              "ToolTip": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\Views\\Home\\Reservations.cshtml",
+              "RelativeToolTip": "Views\\Home\\Reservations.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-30T04:25:27.149Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AirbbCookies.cs",
+              "DocumentMoniker": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\Models\\CookieExtensions\\AirbbCookies.cs",
+              "RelativeDocumentMoniker": "Models\\CookieExtensions\\AirbbCookies.cs",
+              "ToolTip": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\Models\\CookieExtensions\\AirbbCookies.cs",
+              "RelativeToolTip": "Models\\CookieExtensions\\AirbbCookies.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T13:03:51.107Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\Models\\DomainModels\\User.cs",
+              "RelativeDocumentMoniker": "Models\\DomainModels\\User.cs",
+              "ToolTip": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\Models\\DomainModels\\User.cs",
+              "RelativeToolTip": "Models\\DomainModels\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T13:05:53.643Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ConfigureReservations.cs",
+              "DocumentMoniker": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\Models\\DataLayer\\Configuration\\ConfigureReservations.cs",
+              "RelativeDocumentMoniker": "Models\\DataLayer\\Configuration\\ConfigureReservations.cs",
+              "ToolTip": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\Models\\DataLayer\\Configuration\\ConfigureReservations.cs",
+              "RelativeToolTip": "Models\\DataLayer\\Configuration\\ConfigureReservations.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T02:57:41.898Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ResidenceViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\Models\\ViewModels\\ResidenceViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ViewModels\\ResidenceViewModel.cs",
+              "ToolTip": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\Models\\ViewModels\\ResidenceViewModel.cs",
+              "RelativeToolTip": "Models\\ViewModels\\ResidenceViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T02:53:19.18Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Check.cs",
+              "DocumentMoniker": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\Models\\Validations\\Check.cs",
+              "RelativeDocumentMoniker": "Models\\Validations\\Check.cs",
+              "ToolTip": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\Models\\Validations\\Check.cs",
+              "RelativeToolTip": "Models\\Validations\\Check.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T02:52:52.507Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Filters.cs",
+              "DocumentMoniker": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\Models\\Utilities\\Filters.cs",
+              "RelativeDocumentMoniker": "Models\\Utilities\\Filters.cs",
+              "ToolTip": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\Models\\Utilities\\Filters.cs",
+              "RelativeToolTip": "Models\\Utilities\\Filters.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T02:52:24.206Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "SessionExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\Models\\ExtensionMethods\\SessionExtensions.cs",
+              "RelativeDocumentMoniker": "Models\\ExtensionMethods\\SessionExtensions.cs",
+              "ToolTip": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\Models\\ExtensionMethods\\SessionExtensions.cs",
+              "RelativeToolTip": "Models\\ExtensionMethods\\SessionExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T13:06:32.774Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "AirbbSession.cs",
+              "DocumentMoniker": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\Models\\ExtensionMethods\\AirbbSession.cs",
+              "RelativeDocumentMoniker": "Models\\ExtensionMethods\\AirbbSession.cs",
+              "ToolTip": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\Models\\ExtensionMethods\\AirbbSession.cs",
+              "RelativeToolTip": "Models\\ExtensionMethods\\AirbbSession.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T02:50:39.858Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Reservation.cs",
+              "DocumentMoniker": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\Models\\DomainModels\\Reservation.cs",
+              "RelativeDocumentMoniker": "Models\\DomainModels\\Reservation.cs",
+              "ToolTip": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\Models\\DomainModels\\Reservation.cs",
+              "RelativeToolTip": "Models\\DomainModels\\Reservation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA8AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T13:05:50.577Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ExperienceController.cs",
+              "DocumentMoniker": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\Controllers\\ExperienceController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ExperienceController.cs",
+              "ToolTip": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\FALL_2025\\Rohan\\Airbb\\Airbb\\Controllers\\ExperienceController.cs",
+              "RelativeToolTip": "Controllers\\ExperienceController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T13:05:12.849Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

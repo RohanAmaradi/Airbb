@@ -1,4 +1,5 @@
 ﻿using Airbb.Models;
+using Airbb.Models.DataLayer;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Airbb.Areas.Admin.Controllers
@@ -6,15 +7,20 @@ namespace Airbb.Areas.Admin.Controllers
     [Area("Admin")]
     public class ManageUserController : Controller
     {
-        private AirbbContext context { get; set; }
-        public ManageUserController(AirbbContext ctx) => context = ctx;
+        private Repository<User> data { get; set; }
+        public ManageUserController(AirbbContext ctx)
+        {
+            data = new Repository<User>(ctx);
+        }
         public IActionResult Index()
         {
-            var user = context.User
-                .OrderBy(m => m.Name)
-                .ToList();
-
-            return View(user);
+            var options = new QueryOptions<User>
+            {
+                OrderBy = u => u.Name,
+                OrderByDirection = "asc"
+            };
+            var users = data.List(options).ToList();
+            return View(users);
         }
 
         [HttpGet]
@@ -28,9 +34,10 @@ namespace Airbb.Areas.Admin.Controllers
         public IActionResult Edit(int id)
         {
             ViewBag.Action = "Edit";
-            var user = context.User.Find(id);
+            var user = data.Get(id);
             return View(user);
         }
+
 
         [HttpPost]
         public IActionResult Edit(User user)
@@ -39,38 +46,37 @@ namespace Airbb.Areas.Admin.Controllers
             {
                 if (user.UserId == 0)
                 {
-                    context.User.Add(user);
-                    TempData["message"] = $"{user.Name} Added Successfully";
+                    data.Insert(user);
+                    TempData["message"] = $"{user.Name} added successfully.";
                 }
                 else
                 {
-                    context.User.Update(user);
-                    TempData["message"] = $"{user.Name} Updated Successfully";
+                    data.Update(user);
+                    TempData["message"] = $"{user.Name} updated successfully.";
                 }
-                context.SaveChanges();
+                data.Save();
                 return RedirectToAction("Index");
             }
             else
             {
-                ViewBag.action = (user.UserId == 0) ? "Add" : "Edit";
-                return View("Edit", user);
+                ViewBag.Action = user.UserId == 0 ? "Add" : "Edit";
+                return View(user);
             }
         }
-
 
         [HttpGet]
         public IActionResult Delete(int id)
         {
-            var user = context.User.Find(id);
+            var user = data.Get(id);
             return View(user);
         }
 
         [HttpPost]
         public IActionResult Delete(User user)
         {
-            context.User.Remove(user);
+            data.Delete(user);
+            data.Save();
             TempData["message"] = $"{user.Name} Deleted Successfully";
-            context.SaveChanges();
             return RedirectToAction("Index", "ManageUser");
         }
     }

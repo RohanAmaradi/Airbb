@@ -1,4 +1,6 @@
 ﻿using Airbb.Models;
+using Airbb.Models.DataLayer;
+using Airbb.Models.Validations;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -8,24 +10,46 @@ namespace Airbb.Areas.Admin.Controllers
     public class ManageResidenceController : Controller
     {
         private AirbbContext context { get; set; }
-        public ManageResidenceController(AirbbContext ctx) => context = ctx;
+        private Repository<Location> locationRepo { get; set; }
+        private Repository<Residence> residenceRepo { get; set; }
+        private Repository<User> userRepo { get; set; }
+        public ManageResidenceController(AirbbContext ctx)
+        {
+            locationRepo = new Repository<Location>(ctx);
+            residenceRepo = new Repository<Residence>(ctx);
+            userRepo = new Repository<User>(ctx);
+            context = ctx;
+        }
         public IActionResult Index()
         {
-            var residence = context.Residence
-                .Include(r => r.Location)
-                .Include(r => r.User)
-                .OrderBy(m => m.Name)
-                .ToList();
-
-            return View(residence);
+            var options = new QueryOptions<Residence>
+            {
+                Includes = "Location,User",
+                OrderBy = r => r.Name,
+                OrderByDirection = "asc"
+            };
+            var residences = residenceRepo.List(options).ToList();
+            return View(residences);
         }
 
         [HttpGet]
         public IActionResult Add()
         {
             ViewBag.action = "Add";
-            ViewBag.Locations = context.Location.OrderBy(g => g.Name).ToList();
-            ViewBag.Users = context.User.OrderBy(g => g.Name).ToList();
+            var locationOptions = new QueryOptions<Location>
+            {
+                OrderBy = l => l.Name,
+                OrderByDirection = "asc"
+            };
+
+            ViewBag.Locations = locationRepo.List(locationOptions).ToList();
+            var userOptions = new QueryOptions<User>
+            {
+                OrderBy = u => u.Name,
+                OrderByDirection = "asc"
+            };
+
+            ViewBag.Users = userRepo.List(userOptions).ToList();
             return View("Edit", new Residence());
         }
 
@@ -46,50 +70,72 @@ namespace Airbb.Areas.Admin.Controllers
             {
                 if (residence.ResidenceId == 0)
                 {
-                    context.Residence.Add(residence);
+                    residenceRepo.Insert(residence);
                     TempData["message"] = $"{residence.Name} added successfully.";
                 }
                 else
                 {
-                    context.Residence.Update(residence);
+                    residenceRepo.Update(residence);
                     TempData["message"] = $"{residence.Name} updated successfully.";
                 }
-
-                context.SaveChanges();
+                residenceRepo.Save();
                 return RedirectToAction("Index", "ManageResidence");
             }
             else
             {
                 ViewBag.Action = residence.ResidenceId == 0 ? "Add" : "Edit";
-                ViewBag.Locations = context.Location.OrderBy(g => g.Name).ToList();
-                ViewBag.Users = context.User.OrderBy(g => g.Name).ToList();
+                var locationOptions = new QueryOptions<Location>
+                {
+                    OrderBy = l => l.Name,
+                    OrderByDirection = "asc"
+                };
+                ViewBag.Locations = locationRepo.List(locationOptions).ToList();
+                var userOptions = new QueryOptions<User>
+                {
+                    OrderBy = u => u.Name,
+                    OrderByDirection = "asc"
+                };
+                ViewBag.Users = userRepo.List(userOptions).ToList();
                 return View(residence);
             }
         }
+
 
         [HttpGet]
         public IActionResult Edit(int id)
         {
             ViewBag.Action = "Edit";
-            ViewBag.Locations = context.Location.OrderBy(g => g.Name).ToList();
-            ViewBag.Users = context.User.OrderBy(g => g.Name).ToList();
-            var residence = context.Residence.Find(id);
+            var locationOptions = new QueryOptions<Location>
+            {
+                OrderBy = l => l.Name,
+                OrderByDirection = "asc"
+            };
+            ViewBag.Locations = locationRepo.List(locationOptions).ToList();
+
+            var userOptions = new QueryOptions<User>
+            {
+                OrderBy = u => u.Name,
+                OrderByDirection = "asc"
+            };
+            ViewBag.Users = userRepo.List(userOptions).ToList();
+
+            var residence = residenceRepo.Get(id);
             return View(residence);
         }
 
         [HttpPost]
         public IActionResult Delete(Residence residence)
         {
-            context.Residence.Remove(residence);
+            residenceRepo.Delete(residence);
+            residenceRepo.Save();
             TempData["message"] = $"{residence.Name} Deleted Successfully";
-            context.SaveChanges();
             return RedirectToAction("Index");
         }
 
         [HttpGet]
         public IActionResult Delete(int id)
         {
-            var residence = context.Residence.Find(id);
+            var residence = residenceRepo.Get(id);
             return View(residence);
         }
     }

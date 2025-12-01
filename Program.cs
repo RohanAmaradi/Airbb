@@ -1,4 +1,4 @@
-using Airbb.Models;
+using Airbb.Models.DataLayer;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

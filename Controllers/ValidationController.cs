@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Airbb.Models;
+using Airbb.Models.Validations;
+using Airbb.Models.DataLayer;
 
 namespace Airbb.Controllers
 {

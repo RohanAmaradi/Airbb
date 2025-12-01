@@ -1,6 +1,6 @@
 ﻿using System.Text.Json;
 
-namespace Airbb.Models
+namespace Airbb.Models.ExtensionMethods
 {
     public static class SessionExtensions
     {
@@ -14,7 +14,7 @@ namespace Airbb.Models
         public static T? GetObject<T>(this ISession session, string key)
         {
             var value = session.GetString(key);
-            return (string.IsNullOrEmpty(value)) ? default(T) :
+            return string.IsNullOrEmpty(value) ? default :
                 JsonSerializer.Deserialize<T>(value);
         }
     }

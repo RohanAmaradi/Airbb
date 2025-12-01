@@ -1,48 +1,72 @@
 ﻿using Airbb.Models;
+using Airbb.Models.CookieExtensions;
+using Airbb.Models.DataLayer;
+using Airbb.Models.ExtensionMethods;
+using Airbb.Models.ViewModels;
+using Airbb.Models.Utilities;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
 namespace Airbb.Controllers
 {
     public class HomeController : Controller
     {
 
-        private AirbbContext _context;
         private AirbbSession _session => new AirbbSession(HttpContext.Session);
         private AirbbCookies _cookies => new AirbbCookies(Request.Cookies, Response.Cookies);
-        public HomeController(AirbbContext context)
+
+        private Repository<Location> locationRepo { get; set; }
+        private Repository<Residence> residenceRepo { get; set; }
+        private Repository<User> userRepo { get; set; }
+        private Repository<Reservation> reservationRepo { get; set; }
+        public HomeController(AirbbContext ctx)
         {
-            _context = context;
+            locationRepo = new Repository<Location>(ctx);
+            residenceRepo = new Repository<Residence>(ctx);
+            userRepo = new Repository<User>(ctx);
+            reservationRepo = new Repository<Reservation>(ctx);
         }
 
         public ViewResult Index(ResidenceViewModel model)
         {
-            var filterList = new Filters($"{model.ActiveLocation}-{DateTime.TryParse(model.ActiveCheckInDate, out DateTime checkInDate)}" +
-                $"-{DateTime.TryParse(model.ActiveCheckOutDate, out DateTime checkOutDate)}-{model.ActiveNoOfGuests}");
-            var filterString = new Filters(filterList.FilterString);
+            var filterKey = $"{model.ActiveLocation}-{model.ActiveCheckInDate}-{model.ActiveCheckOutDate}-{model.ActiveNoOfGuests}";
+            var filterString = new Filters(filterKey);
+
             _session.SetActiveLocation(model.ActiveLocation);
             _session.SetActiveCheckInDate(model.ActiveCheckInDate);
             _session.SetActiveCheckOutDate(model.ActiveCheckOutDate);
             _session.SetActiveNoOfGuests(model.ActiveNoOfGuests);
+
             int? count = _session.GetReservationCount();
             if (!count.HasValue)
             {
                 string[] ids = _cookies.GetReservationIds();
                 if (ids.Length > 0)
                 {
-                    var reservations = _context.Reservation.Include(r => r.Residence).ThenInclude(res => res.Location)
-                        .Where(r => ids.Contains(r.ReservationId.ToString()))
+                    var resOptions = new QueryOptions<Reservation> { Includes = "Residence,Residence.Location" };
+                    var reservations = reservationRepo
+                        .List(resOptions)
+                        .Where(r => ids.Contains(r.GetType().GetProperty("ReservationId")!.GetValue(r)!.ToString()))
                         .ToList();
+
                     _session.SetReservations(reservations);
                 }
             }
-            model.Location = _context.Location.OrderBy(l => l.Name).ToList();
-            IQueryable<Residence> query = _context.Residence
-                .Include(r => r.Location)
-                .OrderBy(r => r.Name);
+
+            var locOptions = new QueryOptions<Location> { OrderBy = l => l.Name };
+            model.Location = locationRepo.List(locOptions).ToList();
+            
+            var resFilterOptions = new QueryOptions<Residence> { Includes = "Location" };
+            var residences = residenceRepo.List(resFilterOptions).AsQueryable();
+
+            DateTime.TryParse(model.ActiveCheckInDate, out DateTime checkInDate);
+            DateTime.TryParse(model.ActiveCheckOutDate, out DateTime checkOutDate);
+
             if (filterString.HasCheckInDate && filterString.HasCheckOutDate)
             {
-                var reservedResidenceIds = _context.Reservation
+                var reservationDateOptions = new QueryOptions<Reservation>();
+                var reservedResidenceIds = reservationRepo
+                    .List(reservationDateOptions)
+                    .Cast<Reservation>()
                     .Where(res =>
                         res.ReservationStartDate <= checkOutDate &&
                         res.ReservationEndDate >= checkInDate)
@@ -50,28 +74,39 @@ namespace Airbb.Controllers
                     .Distinct()
                     .ToList();
 
-                query = query.Where(r => !reservedResidenceIds.Contains(r.ResidenceId));
+                residences = residences.Where(r => !reservedResidenceIds.Contains(r.ResidenceId));
             }
+
             if (filterString.HasLocation)
             {
-                query = query.Where(r => r.Location.LocationId.ToString() == model.ActiveLocation);
+                residences = residences.Where(r => r.Location.LocationId.ToString() == model.ActiveLocation);
             }
-            if (filterString.HasNoOfGuests)
+
+            if (filterString.HasNoOfGuests && int.TryParse(model.ActiveNoOfGuests, out int guests))
             {
-                if (int.TryParse(model.ActiveNoOfGuests, out int guests))
-                {
-                    query = query.Where(r => r.GuestNumber >= guests);
-                }
+                residences = residences.Where(r => r.GuestNumber >= guests);
             }
-            model.Residence = query.ToList();
+            model.Residence = residences.OrderBy(r => r.Name).ToList();
             return View(model);
         }
+
         public IActionResult Reservations()
         {
-            var reservationIds = _cookies.GetReservationIds();
-            var reservations = _context.Reservation.Include(r => r.Residence).ThenInclude(res => res.Location)
-                .Where(r => reservationIds.Contains(r.ReservationId.ToString()))
+            string[] reservationIds = _cookies.GetReservationIds();
+
+            var options = new QueryOptions<Reservation>
+            {
+                Includes = "Residence,Residence.Location"
+            };
+
+            var reservations = reservationRepo
+                .List(options)
+                .Where(r => reservationIds.Contains(
+                    r.GetType().GetProperty("ReservationId")!
+                    .GetValue(r)!.ToString()
+                ))
                 .ToList();
+
             var model = new ResidenceViewModel
             {
                 Reservation = reservations,
@@ -102,13 +137,14 @@ namespace Airbb.Controllers
                 ReservationStartDate = checkIn,
                 ReservationEndDate = checkOut
             };
-
-            _context.Reservation.Add(reservation);
-            _context.SaveChanges();
+            reservationRepo.Insert(reservation);
+            reservationRepo.Save();
 
             var myReservations = _session.GetReservations();
             myReservations.Add(reservation);
             _session.SetReservations(myReservations);
+
+            _cookies.SetReservationIds(myReservations);
             _cookies.SetReservationIds(myReservations);
 
             TempData["Message"] = "Success! Your residence has been reserved.";
@@ -122,18 +158,14 @@ namespace Airbb.Controllers
             });
         }
 
-
-
-
         [HttpPost]
         public IActionResult RemoveReservation(int id)
         {
-
-            var reservation = _context.Reservation.Find(id);
+            var reservation = reservationRepo.Get(id);
             if (reservation != null)
             {
-                _context.Reservation.Remove(reservation);
-                _context.SaveChanges();
+                reservationRepo.Delete(reservation);
+                reservationRepo.Save();
             }
 
             var reservations = _session.GetReservations();
@@ -150,13 +182,15 @@ namespace Airbb.Controllers
             return RedirectToAction("Reservations");
         }
 
-
         public IActionResult Details(int id)
         {
-            var residence = _context.Residence
-                .Include(r => r.Location)
-                .FirstOrDefault(r => r.ResidenceId == id);
+            var options = new QueryOptions<Residence>
+            {
+                Includes = "Location",
+                Where = r => r.ResidenceId == id
+            };
 
+            var residence = residenceRepo.Get(options);
             var viewModel = new ResidenceViewModel
             {
                 Residences = residence,
@@ -168,6 +202,7 @@ namespace Airbb.Controllers
 
             return View(viewModel);
         }
+
         public IActionResult Support()
         {
             return Content("Area: Public, Controller: Home, Action: Support");

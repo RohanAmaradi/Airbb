@@ -20,7 +20,7 @@
 
                     <div class="position-relative bg-primary bg-opacity-25 p-4">
                         <h3 class="fw-bold text-primary mb-0">
-                            <i class="fa-solid fa-location-dot me-2"></i>Edit Location
+                            <i class="fa-solid fa-location-dot me-2"></i>@ViewBag.Action Location
                         </h3>
                     </div>
 
@@ -29,8 +29,6 @@
                         <h4 class="fw-bold mb-4">Location Details</h4>
 
                         <form asp-action="Edit" method="post">
-
-                            <div asp-validation-summary="All" class="text-danger mb-3"></div>
 
                             <!-- Location Name -->
                             <div class="mb-3">

@@ -1,4 +1,5 @@
 ﻿using Airbb.Models;
+using Airbb.Models.DataLayer;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Airbb.Areas.Admin.Controllers
@@ -6,15 +7,20 @@ namespace Airbb.Areas.Admin.Controllers
     [Area("Admin")]
     public class ManageLocationController : Controller
     {
-        private AirbbContext context { get; set; }
-        public ManageLocationController(AirbbContext ctx) => context = ctx;
+        private Repository<Location> data { get; set; }
+        public ManageLocationController(AirbbContext ctx)
+        {
+            data = new Repository<Location>(ctx);
+        }
         public IActionResult Index()
         {
-            var location = context.Location
-                .OrderBy(m => m.Name)
-                .ToList();
-
-            return View(location);
+            var options = new QueryOptions<Location>
+            {
+                OrderBy = l => l.Name,
+                OrderByDirection = "asc"
+            };
+            var locations = data.List(options).ToList();
+            return View(locations);
         }
 
         [HttpGet]
@@ -31,15 +37,15 @@ namespace Airbb.Areas.Admin.Controllers
             {
                 if (location.LocationId == 0)
                 {
-                    context.Location.Add(location);
+                    data.Insert(location);
                     TempData["message"] = $"{location.Name} Added Successfully";
                 }
                 else
                 {
-                    context.Location.Update(location);
+                    data.Update(location);
                     TempData["message"] = $"{location.Name} Updated Successfully";
                 }
-                context.SaveChanges();
+                data.Save();
                 return RedirectToAction("Index");
             }
             else
@@ -53,25 +59,29 @@ namespace Airbb.Areas.Admin.Controllers
         public IActionResult Edit(int id)
         {
             ViewBag.action = "Edit";
-            var location = context.Location.Find(id);
+            var location = data.Get(id);
             return View(location);
         }
 
         [HttpPost]
         public IActionResult Delete(Location location)
         {
-            context.Location.Remove(location);
+            data.Delete(location);
+            data.Save();
             TempData["message"] = $"{location.Name} Deleted Successfully";
-            context.SaveChanges();
             return RedirectToAction("Index");
         }
 
         [HttpGet]
         public IActionResult Delete(int id)
         {
-            Location location = context.Location
-                    .FirstOrDefault(p => p.LocationId == id) ?? new Location();
+            var options = new QueryOptions<Location>
+            {
+                Where = l => l.LocationId == id
+            };
+            var location = data.Get(options) ?? new Location();
             return View(location);
         }
+
     }
 }

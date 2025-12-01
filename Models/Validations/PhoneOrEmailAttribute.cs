@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Airbb.Models
+namespace Airbb.Models.Validations
 {
     public class PhoneOrEmailAttribute : ValidationAttribute
     {

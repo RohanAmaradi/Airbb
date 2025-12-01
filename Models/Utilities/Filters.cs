@@ -1,4 +1,4 @@
-﻿namespace Airbb.Models
+﻿namespace Airbb.Models.Utilities
 {
     public class Filters
     {

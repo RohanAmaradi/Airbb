@@ -1,4 +1,4 @@
-﻿namespace Airbb.Models
+﻿namespace Airbb.Models.CookieExtensions
 {
     public class AirbbCookies
     {

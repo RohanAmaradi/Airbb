@@ -28,7 +28,7 @@
                                      alt="@Model.Name">
 
                                 <span class="position-absolute bottom-0 start-0 m-3 badge bg-primary bg-opacity-75 text-white fs-6 px-3 py-2">
-                                    <i class="fa-solid fa-pen-to-square me-1"></i>Edit Residence
+                                    <i class="fa-solid fa-pen-to-square me-1"></i>@ViewBag.Action Residence
                                 </span>
                             </div>
                         </div>
@@ -37,7 +37,7 @@
                         <div class="col-md-6">
                             <div class="card-body p-4">
 
-                                <h2 class="fw-bold mb-4">Edit Residence Details</h2>
+                                <h2 class="fw-bold mb-4">@ViewBag.Action Residence Details</h2>
 
                                 <form asp-action="Edit" method="post">
 
@@ -108,13 +108,14 @@
                                     <!-- Owner Dropdown -->
                                     <div class="mb-3">
                                         <label asp-for="UserId" class="form-label fw-semibold">Owner</label>
-                                        <select asp-for="UserId" class="form-select shadow-sm rounded-3">
+                                        @* <select asp-for="UserId" class="form-select shadow-sm rounded-3">
                                             <option value="">Select Owner</option>
                                             @foreach (var user in ViewBag.Users)
                                             {
                                                 <option value="@user.UserId">@user.Name</option>
                                             }
-                                        </select>
+                                        </select> *@
+                                        <input asp-for="UserId" class="form-control shadow-sm rounded-3" />
                                         <span asp-validation-for="UserId" class="text-danger"></span>
                                     </div>
 

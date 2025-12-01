@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 
-namespace Airbb.Models
+namespace Airbb.Models.Validations
 {
     public class BuiltYearAttribute : ValidationAttribute, IClientModelValidator
     {
@@ -47,12 +47,12 @@ namespace Airbb.Models
         }
 
         private string GetFutureMsg(string name) =>
-            base.ErrorMessage ?? $"{name} must be in the past.";
+            ErrorMessage ?? $"{name} must be in the past.";
 
         private string GetTooOldMsg(string name) =>
-            base.ErrorMessage ?? $"{name} cannot be more than {maxYearsBack} years ago.";
+            ErrorMessage ?? $"{name} cannot be more than {maxYearsBack} years ago.";
 
         private string GetGenericMsg() =>
-            base.ErrorMessage ?? $"Built year must be a past year, but no more than {maxYearsBack} years ago.";
+            ErrorMessage ?? $"Built year must be a past year, but no more than {maxYearsBack} years ago.";
     }
 }
